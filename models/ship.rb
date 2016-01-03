@@ -1,8 +1,8 @@
 class Ship
-  attr_accessor :name, :type, :booty
+  attr_reader :name, :type, :booty
 
   SHIPS = []
-  
+
   def initialize(ship)
     @name = ship[:name]
     @type = ship[:type]

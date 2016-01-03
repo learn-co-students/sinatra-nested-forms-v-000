@@ -1,7 +1,8 @@
-<h2><em>New Pirate</em></h2>
-
 <form action="/pirates" method=post>
+
   <!-- Pirate -->
+  <h2><em>New Pirate</em></h2>
+  
   <label for="Name">Name:</label>
   <input type="text" name="pirate[name]"><br>
   <label for="Weight">Weight:</label>
@@ -9,8 +10,10 @@
   <label for="Height">Height:</label>
   <input type="text" name="pirate[height]"><br>
 
-  <!-- Ship -->
-  <% @ids.each do |id| %>
+    <!-- Ship -->
+   <h2><em>New Ship</em></h2>
+
+   <% @ids.each do |id| %>
     <label for="Name">Ship Name:</label>
     <input id="ship_name_<%=id%>" type="text" name="pirate[ships][][name]"><br>
     <label for="Weight">Ship Type:</label>
@@ -19,5 +22,5 @@
     <input id="ship_booty_<%=id%>" type="text" name="pirate[ships][][booty]"><br>
   <% end %>
   <input type="submit" value="Submit">
-  
+
 </form>
