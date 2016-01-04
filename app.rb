@@ -14,11 +14,11 @@ module FormsLab
 
     post '/pirates' do 
       @pirate = params
-      erb:'pirates/show'
+      erb :'pirates/show'
     end
 
     class Pirate
-      attr_writer :name, :weight, :height
+      attr_accessor :name, :weight, :height
       PIRATES = []
 
       def initialize(name, weight, height)
@@ -34,7 +34,7 @@ module FormsLab
     end
 
     class Ship
-      attr_writer :name, :type, :booty 
+      attr_accessor :name, :type, :booty 
       SHIPS = []
 
       def initialize(name, type, booty)
