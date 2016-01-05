@@ -7,7 +7,7 @@ gem 'pry'
 gem 'tux'
 
 group :test do
-  gem 'rspec'
+  gem 'rspec', '3.4.0'
   gem 'rack-test'
   gem 'capybara'
 end
