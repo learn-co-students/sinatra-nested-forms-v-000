@@ -4,14 +4,11 @@
 <p>Weight: <%= @pirate.weight %></p>
 <p>Height: <%= @pirate.height %></p>
 
-<h2>Display your first ship here</h2>
+<h2>Display your ships here</h2>
 
-<p>Name: <%= @ship_1.name %></p>
-<p>Type: <%= @ship_1.type %></p>
-<p>Booty: <%= @ship_1.booty %></p>
-
-<h2>Display your second ship here</h2>
-
-<p>Name: <%= @ship_2.name %></p>
-<p>Type: <%= @ship_2.type %></p>
-<p>Booty: <%= @ship_2.booty %></p>
+<% @ships.each_with_index do |ship,i| %>
+  <h4>Ship <%= i+1 %></h4>
+  <p>Name: <%= ship.name %></p>
+  <p>Type: <%= ship.type %></p>
+  <p>Booty: <%= ship.booty %></p>
+<% end %>
