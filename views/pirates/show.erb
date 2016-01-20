@@ -1,16 +1,14 @@
-<h1>Display your Pirate here</h1>
- <p><%=@pirate[:pirate][:name]   %></p>
- <p><%=@pirate[:pirate][:height] %></p>
- <p><%=@pirate[:pirate][:weight] %></p>
+<h2>Pirate</h2>
+Pirate: <%= @pirate[:pirate][:name] %><br>
+Height: <%= @pirate[:pirate][:height] %><br>
+Weight: <%= @pirate[:pirate][:weight] %><br>
 
-<h2>Display your first ship here</h2>
+<h2>Ship 1</h2>
+Name: <%= @pirate[:pirate][:ships][0][:name] %><br>
+Type: <%= @pirate[:pirate][:ships][0][:type] %><br>
+Booty: <%= @pirate[:pirate][:ships][0][:booty] %><br>
 
-<p>Name: <%= @ship_1[:name] %></p>
-<p>Type: <%= @ship_1[:type] %></p>
-<p>Booty: <%= @ship_1[:booty] %></p>
-
-<h2>Display your second ship here</h2>
-
-<p>Name: <%= @ship_2[:name] %></p>
-<p>Type: <%= @ship_2[:type] %></p>
-<p>Booty: <%= @ship_2[:booty] %></p>
+<h2>Ship 2</h2>
+Name: <%= @pirate[:pirate][:ships][1][:name] %><br>
+Type: <%= @pirate[:pirate][:ships][1][:type] %><br>
+Booty: <%= @pirate[:pirate][:ships][1][:booty]%><br>
