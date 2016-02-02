@@ -6,7 +6,7 @@
 </head>
 <body>
   <h1>New Pirate Form</h1>
-  <form method="post" action="/pirates">
+  <form method="POST" action="/pirates">
     <h3>Pirate:</h3>
     <p>Name: <input type="text" name="pirate[name]"></p>
     <p>Weight: <input type="text" name="pirate[weight]"></p>
@@ -27,7 +27,7 @@
     <input id="ship_type_2" type="text" name="pirate[ships][][type]" />
     <label for="ship_booty_2">Booty</label>
     <input id="ship_booty_2" type="text" name="pirate[ships][][booty]" />
-    <input type="submit" name="submit" id="submit">
+    <input type="submit" value="Submit">
   </form>
 </body>
 </html>
