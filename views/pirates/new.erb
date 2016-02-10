@@ -6,14 +6,14 @@
   </head>
   <body>
     <h1>Pirates and Ships</h1>
-    <form method="post" action="/pirates">
+    <form action='/pirates' method="POST">
       <p>Add yarr Pirate:</p>
       <p>Name:</p>
-      <input type="text" name="pirate[name]">
+      <input id="pirate_name" type="text" name="pirate[name]">
       <p>Weight:</p>
-      <input type="text" name="pirate[weight]">
+      <input id="pirate_weight" type="text" name="pirate[weight]">
       <p>Height:</p>
-      <input type="text" name="pirate[height]">
+      <input id="pirate_height" type="text" name="pirate[height]">
       <br>
       <p>Add yarr Ship:</p>
       <p>Name:</p>
@@ -31,7 +31,7 @@
       <p>Booty Attribute:</p>
       <input id="ship_booty_2" type="text" name="pirate[ships][][booty]">
       <br>
-      <input type="Submit" value="Submit"><p>Submit</p>
+      <input type="submit" value="Submit">
     </form>
   </body>
 </html>
