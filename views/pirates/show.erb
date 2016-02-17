@@ -1,7 +1,28 @@
-<h1>Display your Pirate here</h1>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Pirate Builder</title>
+  </head>
 
+  <body>
 
-<h2>Display your first ship here</h2>
+    <h1>Here's yer damn pirate:</h1>
 
+    <h2>Name: <%= @yar.name %></h2>
+    <h2>Height: <%= @yar.height %></h2>
+    <h2>Weight: <%= @yar.weight %></h2>
+    <h1>Ship info:</h1>
+      <% Ship.all.each_with_index{|s, i| %>
+      <h2><%= "Ship #{i+1}:" %></h2>
+      <ul>
+        <h3><li><%= "Name: #{s.name}" %></li></h3>
+        <h3><li><%= "Type: #{s.type}"%></li></h3>
+        <h3><li><%= "Booty: #{s.booty}"%></li></h3>
+      </ul>
+      <% } %>
 
-<h2>Display your second ship here</h2>
+  </body>
+
+</html>
+

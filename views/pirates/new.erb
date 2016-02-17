@@ -1,1 +1,30 @@
-<h1>Make your form here</h1>
+<!DOCTYPE <html>
+<head>
+  <title>New pirates & ships</title>
+</head>
+<body>
+  <h1>BUILD A DAMN PIRATE:</h1>
+  <form method="post" action="/pirates">
+    <h3>Name:<input type="text" name="pirate[name]"></input></h3>
+    <h3>Height:<input type="text" name="pirate[height]"></input></h3>
+    <h3>Weight:<input type="text" name="pirate[weight]"></input></h3>
+  
+
+  <h1>BUILD SOME DAMN SHIPS FOR THAT PIRATE</h1>
+  <h2>Ship 1:</h2>
+    <h3>Ship name:<input id="ship_name_1" type="text" name="pirate[ships][][name]"></input></h3>
+    <h3>Ship type:<input id="ship_type_1" type="text" name="pirate[ships][][type]"></input></h3>
+    <h3>Ship booty (heh heh, "booty"):<input id="ship_booty_1" type="text" name="pirate[ships][][booty]"></input></h3>
+  <h2>Ship 2:</h2>
+    <h3>Ship name:<input id="ship_name_2" type="text" name="pirate[ships][][name]"></input></h3>
+    <h3>Ship type:<input id="ship_type_2" type="text" name="pirate[ships][][type]"></input></h3>
+    <h3>Ship booty (heh heh, "booty"):<input id="ship_booty_2" type="text" name="pirate[ships][][booty]"></input></h3>
+  
+
+
+  <button type="submit" value="Submit">YAR!</button>
+  </form>
+
+
+</body>
+</html>
