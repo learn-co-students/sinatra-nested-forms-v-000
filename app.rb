@@ -3,9 +3,8 @@ require './environment'
 module FormsLab
   class App < Sinatra::Base
 
-    # code other routes/actions here
     get '/' do 
-      erb :root
+      erb :'root'
     end
 
     get '/new' do
@@ -25,37 +24,3 @@ module FormsLab
     end
   end
 end
-
-  class Pirate
-    attr_accessor :name, :weight, :height
-
-    @@PIRATES = []
-
-    def initialize(args)
-      @name = args[:name]
-      @weight = args[:weight]
-      @height = args[:height]
-      @@PIRATES << self
-    end
-
-    def self.all
-      @@PIRATES
-    end
-  end
-
-  class Ship
-    attr_accessor :name, :type, :booty
-
-    @@SHIPS = []
-
-    def initialize(args)
-      @name = args[:name]
-      @type = args[:type]
-      @name = args[:booty]
-      @@SHIPS << self
-    end
-
-    def self.all
-      @@SHIPS
-    end
-  end
