@@ -5,13 +5,13 @@ class Pirate
   PIRATES = []
 
   def initialize(pirate)
-    @name = ship[:name]
-    @weight = ship[:wight]
-    @height = ship[:height]
+    @name = pirate[:name]
+    @weight = pirate[:weight]
+    @height = pirate[:height]
     PIRATES << self
   end
 
-  def self.all?
+  def self.all
     PIRATES
   end
 
