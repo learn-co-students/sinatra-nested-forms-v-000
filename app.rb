@@ -5,19 +5,18 @@ module FormsLab
 
     # code other routes/actions here
     get '/' do
-      erb :new
+      erb :root
     end
 
-    #get '/new' do
-    #  @pirate = params
-    #  erb :new
-    #end
+    get '/pirates/new' do
+      erb :"pirates/new"
+    end
 
     post '/pirates' do
       @pirate = Pirate.new(params)
-      params[:pirate][:ships].each do |key,value|
-        Ship.new(value)
-      end
+      #params[:pirate][:ships].each do |key,value|
+      #  Ship.new(value)
+      #rspecend
       erb :show
     end
   end
