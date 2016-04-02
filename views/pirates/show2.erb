@@ -12,14 +12,19 @@
       <h4>Weight: <%= @pirate.weight %> inches</h4>
     </div> 
 
-    <h2>Both ships displayed here to pass tests</h2>
-      <% @ships.each do |ship| %>
+    <h2>Display your first ship here</h2>
+      <% @ships[0].tap do |ship| %>
       <h3>Name: <%= ship.name %></h3>
       <h4>Type: <%= ship.type %></h4>
       <h4>Booty: <%= ship.booty %></h4>
-      <% end %>
+    <% end %>
 
-    <h4> See other examples "show1.erb and show2.erb" which would display the 1st and 2nd ships as intended by the lab</h4>
+    <h2>Display your second ship here</h2>
+      <% @ships[1].tap do |ship| %>
+      <h3>Name: <%= ship.name %></h3>
+      <h4>Type: <%= ship.type %></h4>
+      <h4>Booty: <%= ship.booty %></h4>
+    <% end %>
 
   </body>
 </html>
