@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charaset="UTF-8">
+    <title>Title</title>
+  </head>
+  <body>
+    <h1>A Pirates Life For Me!</h1>
+    <form method='post' action='/pirates'>
+      <p>Pirate's Name: <input type="text" name="pirate[name]"></p>
+      <p>Pirate's Weight: <input type="text" name="pirate[weight]"</p>
+      <p>Pirate's Height: <input type="text" name="pirate[height]"</p>
+      <p>Ship's Name: <input id="ship_name_1" type="text" name="pirate[ships][][name]"></p>
+      <p>Ship's Type: <input id="ship_type_1" type="text" name="pirate[ships][][type]"></p>
+      <p>Ship's Booty: <input id="ship_booty_1" type="text" name="pirate[ships][][booty]"></p>
+      <p>Ship's Name: <input id="ship_name_2" type="text" name="pirate[ships][][name]"></p>
+      <p>Ship's Type: <input id="ship_type_2" type="text" name="pirate[ships][][type]"></p>
+      <p>Ship's Booty: <input id="ship_booty_2" type="text" name="pirate[ships][][booty]"></p>
+      <input type="submit" id="Submit">
+    </form>
+  </body>
+</html>
