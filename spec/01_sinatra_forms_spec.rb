@@ -70,9 +70,9 @@ describe "FormsLab::App" do
       }
     end
 
-    after do
-      Ship.clear
-    end
+#    after do
+#      Ship.clear
+#    end
 
     it "returns a 200 status code" do
       expect(last_response.status).to eq(200)
