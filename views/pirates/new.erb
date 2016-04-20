@@ -1,1 +1,26 @@
-<h1>Make your form here</h1>
+<!-- <h1>Make your form here</h1> -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Pirates!</title>
+    <link rel="stylesheet" type="text/css" href="stylesheets/bootstrap.css">
+  </head>
+
+  <body>
+    <div class="container">
+      <form method="POST" action="/pirates">
+          <label><input type="text" name="pirate[name]" value="Name">Pirate's Name</label>
+          <label><input type="text" name="pirate[weight]" value="Weight">Pirate's Weight</label>
+          <label><input type="text" name="pirate[height]" value="Height">Pirate's Height</label>
+          <label><input type="text" name="pirate[ships][][name]" value="Ship Name" id="ship_name_1">Ship's Name</label>
+          <label><input type="text" name="pirate[ships][][type]" value="Ship Type" id="ship_type_1">Ship's Type</label>
+          <label><input type="text" name="pirate[ships][][booty]" value="Ship's Booty" id="ship_booty_1">Ship's Booty</label>
+          <label><input type="text" name="pirate[ships][][name]" value="Ship Name" id="ship_name_2">Ship's Name</label>
+          <label><input type="text" name="pirate[ships][][type]" value="Ship Type" id="ship_type_2">Ship's Type</label>
+          <label><input type="text" name="pirate[ships][][booty]" value="Ship's Booty" id="ship_booty_2">Ship's Booty</label>
+          <label><input type="submit" name="submit" value="Submit"></label>
+      </form>
+    </div>
+  </body>
+</html>
+
