@@ -9,8 +9,9 @@
   <%= @pirate_info.height %>
 
 <h2>Display your ships here</h2>
-<% @ships.each do |ship| %>
+<% @ships.each.with_index(1) do |ship, index| %>
   <h3>
+    <%= index %>
     Name:
     <%= ship.name %>
   </h3>
