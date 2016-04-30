@@ -1,25 +1,13 @@
-<!DOCTYPE html>
-<html>
-  <head>Pirates</head>
-  <body>
-    <h1>Create Pirate!</h1>
-    <form action="/pirates" method=POST>
-      <h1>Pirate</h1>
-      <p>Pirate name: <input type="text" name="pirate[name]"></p>
-      <p>Pirate height: <input type="text" name="pirate[height]"></p>
-      <p>Pirate weight: <input type="text" name="pirate[weight]"></p>
-      
-      <h1>Ship 1</h1>
-      <p>Ship name: <input id="ship_name_1" type="text" name="pirate[ships][][name]"></p>
-      <p>Ship type: <input id="ship_type_1" type="text" name="pirate[ships][][type]"></p>
-      <p>Ship booty: <input id="ship_booty_1" type="text" name="pirate[ships][][booty]"></p>
 
-      <h1>Ship 2</h1>
-      <p>Ship name: <input id="ship_name_2" type="text" name="pirate[ships][][name]"></p>
-      <p>Ship type: <input id="ship_type_2" type="text" name="pirate[ships][][type]"></p>
-      <p>Ship booty: <input id="ship_booty_2" type="text" name="pirate[ships][][booty]"></p>
-
-      <input type="submit" value="Submit">
-    </form>
-  </body>
-</html>
+<h1>Ian</h1>
+  <%= @pirate.name %>
+  <%= @pirate.weight %>
+  <%= @pirate.height %>
+<h2>Titanic</h2>
+  <%= @ships[0].name %>
+  <%= @ships[0].type %>
+  <%= @ships[0].booty %>
+<h2>Carpathia</h2>
+  <%= @ships[1].name %>
+  <%= @ships[1].type %>
+  <%= @ships[1].booty %>
