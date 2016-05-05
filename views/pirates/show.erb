@@ -1,7 +1,11 @@
-<h1>Display your Pirate here</h1>
+<% @pirates.each do |key, val| %>
+  <% if key != "ships" %>
+    <h1><%= "#{key}: #{val}" %></h1>
+  <% end %>
+<% end %>
 
-
-<h2>Display your first ship here</h2>
-
-
-<h2>Display your second ship here</h2>
+<% @pirates["ships"].each do |ship| %>
+  <% ship.each do |key, val| %>
+    <h2><%= "#{key}: #{val}" %></h2>
+  <% end %>
+<% end %>
