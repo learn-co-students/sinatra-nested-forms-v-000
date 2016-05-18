@@ -7,10 +7,10 @@ class Ship
     SHIPS
   end
 
-  def initialize(attributes)
-    @name = attributes[:name]
-    @type = attributes[:type]
-    @booty = attributes[:booty]
+  def initialize(details)
+    @name = details[:name]
+    @type = details[:type]
+    @booty = details[:booty]
     SHIPS << self
   end
 

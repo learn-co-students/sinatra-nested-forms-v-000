@@ -2,11 +2,11 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>title</title>
+  <title>Results</title>
   
 </head>
 <body>
-  <h1> Pirates You Say?!</h1>
+  <h1>'Ere's Yer Pirate!</h1>
 
   <h1>Pirate</h1>
 
@@ -20,10 +20,12 @@
   
   <% @ships.each do |ship| %>
   <div class="ships">
-    <h3>Name: <%= @ship.name %></h3>
-    <h3>Type:<%= @ship.type %></h3>
-    <h3>Booty:<%= @ship.booty %></h3>
+    <h3>Name: <%= ship.name %></h3>
+    <h3>Type:<%= ship.type %></h3>
+    <h3>Booty:<%= ship.booty %></h3>
+   <% end %> 
   </div>
+
 
  </body>
 </html> 
