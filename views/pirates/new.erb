@@ -1,1 +1,40 @@
-<h1>Make your form here</h1>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Form Here</title>
+  </head>
+  <body>
+    <h2>Welcome to the Nested Forms Lab!</h2>
+    <p>
+      let's navigate to the '/new'
+    </p>
+    <form class="" action="/pirates" method="post">
+      Pirate Name:<input type="text" name="pirate[name]" value="">
+      Pirate Weight:<input type="text" name="pirate[weight]" value="">
+      Pirate Height:<input type="text" name="pirate[height]" value="">
+      Ship1 Name:<input id="ship_name_1" type="text" name="ship[][name]" value="">
+      Ship1 Type:<input id="ship_type_1" type="text" name="ship[][type]" value="">
+      Ship1 Booty:<input id="ship_booty_1" type="text" name="ship[][booty]" value="">
+      Ship2 Name:<input id="ship_name_2" type="text" name="ship[][name]" value="">
+      Ship2 Type:<input id="ship_type_2" type="text" name="ship[][type]" value="">
+      Ship2 Booty:<input id="ship_booty_2" type="text" name="ship[][booty]" value="">
+      <input type="submit" name="submit" value="submit">
+    </form>
+
+    <!-- Super Hack -->
+    <!-- it "renders the first ship's input fields for the name, type, and booty attributes on the page" do
+      expect(last_response.body).to include("pirate[ships][][name]")
+      expect(last_response.body).to include("pirate[ships][][type]")
+      expect(last_response.body).to include("pirate[ships][][booty]")
+    end
+
+    it "renders the second ship's input field for the name, type, and booty attributes on the page" do
+      expect(last_response.body).to include("pirate[ships][][name]")
+      expect(last_response.body).to include("pirate[ships][][type]")
+      expect(last_response.body).to include("pirate[ships][][booty]")
+    end
+  end -->
+
+  </body>
+</html>
