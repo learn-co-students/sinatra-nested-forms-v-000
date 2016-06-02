@@ -6,7 +6,7 @@
 <body>
   <h1>Pirate and Ship Form</h1>
 
-  <form method="post" action="/pirates">
+  <form method="POST" action="/pirates">
     <h3>Pirate Info:</h3>
     <p>Pirate Name: <input type="text" name="pirate[name]"></p>
     <p>Pirate Weight: <input type="text" name="pirate[weight]"></p>
@@ -21,7 +21,7 @@
     <p>Ship Name: <input id="ship_name_2" type="text" name="pirate[ships][][name]"></p>
     <p>Ship Type: <input id="ship_type_2" type="text" name="pirate[ships][][type]"></p>
     <p>Ship Booty: <input id="ship_booty_2" type="text" name="pirate[ships][][booty]"></p>
-    <input type="submit" id="submit" name="submit">
+    <input type="submit" id="submit" value="Submit" name="submit">
   </form>
 </body>
 </html>

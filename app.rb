@@ -12,7 +12,13 @@ module FormsLab
     end
 
     post '/pirates' do
-      puts params
+      @pirate = Pirate.new(params[:pirate])
+
+      params[:pirate][:ships].each do |details|
+        Ship.new(details)
+      end
+
+      @ships = Ship.all
       erb 'pirates/show'.to_sym
     end
 
