@@ -1,5 +1,5 @@
 GEM
-  remote: https://rubygems.org/
+  remote: http://rubygems.org/
   specs:
     addressable (2.4.0)
     backports (3.6.8)
@@ -92,4 +92,4 @@ DEPENDENCIES
   tux
 
 BUNDLED WITH
-   1.10.6
+   1.12.5
