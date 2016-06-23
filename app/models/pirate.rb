@@ -6,7 +6,7 @@ class Pirate
 
   def initialize(args)
     @name = args[:name]
-    @weight = args[:grade]
+    @weight = args[:weight]
     @height = args[:height]
     PIRATES << self
   end
