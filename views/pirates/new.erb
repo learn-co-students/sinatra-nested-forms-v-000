@@ -1,1 +1,29 @@
-<h1>Make your form here</h1>
+<!doctype html>
+
+<html>
+<head>
+  <title></title>
+</head>
+<body>
+  
+  <form method="post" action="/pirates">
+    <p>Enter your phrase:</p>
+    <textarea name="pirate[name]"></textarea>
+    <br>
+    <textarea name="pirate[weight]"></textarea><br>
+    <textarea name="pirate[height]"></textarea><br>
+    <textarea name="pirate[ships][][name]"></textarea><br>
+
+    <textarea id="ship_name_1" name="pirate[ships][][name]"></textarea><br>
+    <textarea id="ship_type_1" name="pirate[ships][][type]"></textarea><br>
+    <textarea id="ship_booty_1" name="pirate[ships][][booty]"></textarea><br>
+
+    <textarea id="ship_name_2" name="pirate[ships][][name]"></textarea><br>
+    <textarea id="ship_type_2" name="pirate[ships][][type]"></textarea><br>
+    <textarea id="ship_booty_2" name="pirate[ships][][booty]"></textarea><br>
+    <button type="submit" value="submit">Submit</button>
+  </form>
+
+</body>
+</html>
+
