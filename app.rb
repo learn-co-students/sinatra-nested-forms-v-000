@@ -13,9 +13,21 @@ module FormsLab
     end
 
     post '/pirates' do
-      raise "HELLO FROM post /pirates".inspect
-      @pirate = Pirate.new(pirate[name], pirate[weight], pirate[height])
-      erb :show 
+      # @pirate = Pirate.new(params[:pirate][:name], params[:pirate][:weight], params[:pirate][:height])
+      # @ship = Ship.new(params[:pirate][:ships][0][:name], params[:pirate][:ships][0][:type], params[:pirate][:ships][0][:booty])
+      # @ship2 = Ship.new(params[:pirate][:ships][1][:name], params[:pirate][:ships][1][:type], params[:pirate][:ships][1][:booty])
+      # erb :'pirates/show'
+
+        @pirate = Pirate.new(params[:pirate])
+
+  params[:pirate][:ships].each do |details|
+    Ship.new(details)
+  end 
+
+  @ships = Ship.all
+
+  erb :"pirates/show"
+       
     end   
 
   end
