@@ -5,17 +5,17 @@
     <title>Pirates be Here, Arrr....</title>
   </head>
   <body>
-    <h1><%= @new_pirate.name %>
-    <%= @new_pirate.weight %>
-    <%= @new_pirate.height %></h1>
+    <h1>Arrr...  The pirate skallywag's name be....<%= @new_pirate.name %>
+    and he be weighing a stout <%= @new_pirate.weight %>
+     and be standing <%= @new_pirate.height %> tall.</h1>
 
-    <h2>
+    <h2> Here be the ships under his command...
       <% @Ships.each do |ship| %>
         <div class="ship">
           <br>
-          <p> <%= ship.name %> </p>
-          <p> <%= ship.type %> </p>
-          <p> <%= ship.booty %>  
+          <p> The <%= ship.name %> </p>
+          <p> she be a <%= ship.type %> </p>
+          <p> and she carrys <%= ship.booty %>  
           </p>
         </div>
       <% end %>
