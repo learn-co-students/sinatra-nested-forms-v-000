@@ -4,7 +4,6 @@ attr_accessor :name, :type, :booty
   @@ships = []
 
   def initialize(ship)
-    binding.pry
     @name = ship[:name]
     @type = ship[:type]
     @booty = ship[:booty]

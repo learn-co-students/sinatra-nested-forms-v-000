@@ -6,32 +6,27 @@
   </head>
   <body>
    <h1>Make your form here</h1>
-    <form action="/show" method="post"> 
-      <!-- <label for="pirates">Enter Pirates info: -->
-      <p>Pirates Name: <input type="text" name="pirate[name]"></p>
-      <p>Pirates Weight: <input type="text" name="pirate[weight]"></p>
-      <p>Pirates Height: <input type="text" name="pirate[height]"></p>
-      <!-- </label> -->
+    <form action="/pirates" method="post"> 
+
+      <p>Pirates Name: <input type="text" name="pirate[name]" id="pirate[name]"></p>
+      <p>Pirates Weight: <input type="text" name="pirate[weight]" id="pirate[weight]"></p>
+      <p>Pirates Height: <input type="text" name="pirate[height]" id="pirate[height]"></p>
       <br>
       
-      <!-- <label for="ship_1" id="ship_1">Enter First Ship info: -->
-      <p>Ship #1 Name: <input type="text" name="pirate[ships][][name]" ></p>
+      <p>Ship #1 Name: <input id="ship_name_1" type="text" name="pirate[ships][][name]" ></p>
 
-      <p>Ship #1 Type: <input type="text" name="pirate[ships][][type]" ></p>
+      <p>Ship #1 Type: <input id="ship_type_1"type="text" name="pirate[ships][][type]" ></p>
       
-      <p>Ship #1 Booty: <input type="text" name="pirate[ships][][booty]" ></p>
-      <!-- </label> -->
+      <p>Ship #1 Booty: <input id="ship_booty_1" type="text" name="pirate[ships][][booty]" ></p>
       <br>
 <!--  -->      
-      <!-- <label for="ship_2" id="ship_2">Enter Second Ship info: -->
-      <p>Ship #2 Name: <input type="text" name="pirate[ships][][name]" ></p>
+      <p>Ship #2 Name: <input id="ship_name_2" type="text" name="pirate[ships][][name]" ></p>
 
-      <p>Ship #2 Type: <input type="text" name="pirate[ships][][type]" ></p>
+      <p>Ship #2 Type: <input id="ship_type_2"type="text" name="pirate[ships][][type]" ></p>
       
-      <p>Ship #2 Booty: <input type="text" name="pirate[ships][][booty]" ></p>
-      <!-- </label> -->
+      <p>Ship #2 Booty: <input id="ship_booty_2" type="text" name="pirate[ships][][booty]" ></p>
 
-      <input type="submit" > <!-- name="submit" id="submit"> -->
+      <button type="Submit" id="Submit" name="Submit"> 
 
     
     </form>
@@ -41,16 +36,6 @@
 </html>
 
 
-<!-- 
-<form action="/student" method="post">
-  Student Name: <input type="text" name="student[name]">
-  Student Grade: <input type="text" name="student[grade]">
-  Course Name: <input type="text" name="student[courses][][name]" />
-  Course Topic: <input type="text" name="student[courses][][topic]" />
-  Course Name: <input type="text" name="student[courses][][name]" />
-  Course Topic: <input type="text" name="student[courses][][topic]" />
-  <input type="submit">
-</form>
- -->
+
 
 
