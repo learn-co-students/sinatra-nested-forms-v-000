@@ -4,8 +4,7 @@ class Ship
   SHIPS = []
 
   def initialize(args)
-    puts args
-    puts args["name"]
+
     @name = args["name"]
     @booty = args["booty"]
     @type = args["type"]
