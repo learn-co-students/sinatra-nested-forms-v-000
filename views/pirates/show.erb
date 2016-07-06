@@ -1,7 +1,17 @@
-<h1>Display your Pirate here</h1>
 
+<ul>
+ <li><h1><%= @pirate.name %></h1></li>
+ <li><h1><%= @pirate.weight %></h1></li>
+ <li><h1><%= @pirate.height %></h1></li>
+ </ul>
 
-<h2>Display your first ship here</h2>
-
-
-<h2>Display your second ship here</h2>
+<ul>
+<% counter = 1 %>
+<% Ship.all.each do |ship| %>
+  <h2>Ship <%= counter %> Information</h2>
+  <li><%= ship.name %></li>
+  <li><%= ship.type %></li>
+  <li><%= ship.booty %></li>
+  <% counter += 1 %>
+<% end %>
+</ul>
