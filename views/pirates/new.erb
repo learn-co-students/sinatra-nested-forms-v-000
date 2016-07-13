@@ -1,1 +1,40 @@
-<h1>Make your form here</h1>
+<html>
+  <head>
+    <style>
+      label {
+        display: block;
+        padding-top: 10px;
+        padding-bottom: 5px;
+        font-weight: bold;
+      }
+
+      input {
+        display: block;
+        margin-bottom: 10px;
+      }
+    </style>
+    <meta charset="UTF-8">
+    <title>New pirates</title>
+  </head>
+  <body>
+    <h1>Welcome to the Nested Forms Lab!</h1>
+    <form method="post" action="/pirates">
+      <label>Pirate</label>
+      Pirate Name<input type="string" name="pirate[name]" id="pirate_name">
+      Pirate Weight<input type="string" name="pirate[weight]" id="pirate_weight">
+      Pirate Height<input type="string" name="pirate[height]" id="pirate_height">
+
+      <label>Pirate Ship One</label>
+      Ship Name<input type="string" name="pirate[ships][][name]" id="ship_name_1">
+      Ship Type<input type="string" name="pirate[ships][][type]" id="ship_type_1">
+      Ship Booty<input type="string" name="pirate[ships][][booty]" id="ship_booty_1">
+
+      <label>Pirate Ship Two</label>
+      Ship Name<input type="string" name="pirate[ships][][name]" id="ship_name_2">
+      Ship Type<input type="string" name="pirate[ships][][type]" id="ship_type_2">
+      Ship Booty<input type="string" name="pirate[ships][][booty]" id="ship_booty_2">
+
+      <label></label><input type="submit" id="Submit">
+    </form>
+  </body>
+</html>
