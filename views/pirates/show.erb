@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Pirates</title>
   </head>
   <body>
     <h1>Pirate</h1>
@@ -11,13 +11,14 @@
       <h4>Weight: <%= @pirate.weight %> pounds</h4><br>
       <h4>Height: <%= @pirate.height %> inches</h4>
     </div>
-
+    <br>
     <h1>Ships</h1>
     <% @ships.each do |ship| %>
       <div class="ship">
         <p>Name: <%= ship.name %></p><br>
         <p>Type: <%= ship.type %></p><br>
         <p>Booty: <%= ship.booty %></p>
+        <br>
       </div>
     <% end %>
 
