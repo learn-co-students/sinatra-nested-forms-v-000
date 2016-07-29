@@ -1,4 +1,4 @@
-<form method="post" action="/pirate">
+<form method="post" action="/pirates">
   <h2>Pirate:</h2>
   <label for="pirate_name">Name</label>
   <input id="pirate_name" type="text" name="pirate[name]">
@@ -7,7 +7,8 @@
   <label for="pirate_height">Height</label>
   <input id="pirate_height" type="text" name="pirate[height]">
 
-  <h2>Ship:</h2>
+  <h2>Ships</h2>
+  <h3>Ship 1</h3>
   <label for="ship_name_1">Name</label>
   <input id="ship_name_1" type="text" name="pirate[ships][][name]">
   <label for="ship_type_1">Type</label>
@@ -15,6 +16,7 @@
   <label for="ship_booty_1">Booty</label>
   <input id="ship_booty_1" type="text" name="pirate[ships][][booty]">
 
+  <h3>Ship 2</h3>
   <label for="ship_name_2">Name</label>
   <input id="ship_name_2" type="text" name="pirate[ships][][name]">
   <label for="ship_booty_2">Type</label>
