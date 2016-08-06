@@ -8,13 +8,20 @@
   <h1>Make your form here</h1>
   <form action="/pirates" method="post">
   
-  <input type="text" name="pirates[:name]">
-  <input type="text" name="pirates[:weight]">
-  <input type="text" name="pirates[:height]">
+  <input type="text" name="pirate[name]">
+  <input type="text" name="pirate[weight]">
+  <input type="text" name="pirate[height]">
 
-  <input type="text" name="pirates[:ships][:name]">
-  <input type="text" name="pirates[:ships][:type]">
-  <input type="text" name="pirates[:ships][:booty]">
+  <input type="text" name="pirate[ships][][name]" id="ship_name_1">
+  <input type="text" name="pirate[ships][][type]" id="ship_type_1">
+  <input type="text" name="pirate[ships][][booty]" id="ship_booty_1">
+
+  <input type="text" name="pirate[ships][][name]" id="ship_name_2">
+  <input type="text" name="pirate[ships][][type]" id="ship_type_2">
+  <input type="text" name="pirate[ships][][booty]" id="ship_booty_2">
+
+  <input type="submit" name="Submit" value="Submit">
+
 
   </form>
 </body>
