@@ -3,7 +3,7 @@ class Ship
 
   SHIPS = []
 
-  def initialize(name, type, booty)
+  def initialize(name: self.name, type: self.type, booty: self.booty)
     @name = name
     @type = type
     @booty = booty
