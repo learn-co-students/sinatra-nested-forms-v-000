@@ -10,6 +10,12 @@ class Ship
     SHIPS << self
   end
 
-  
+  def self.all
+    SHIPS
+  end
+
+  def self.delete
+    SHIPS = []
+  end
 
 end
