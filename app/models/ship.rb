@@ -7,11 +7,11 @@ class Ship
     @name = name
     @type = type
     @booty = booty
-    SHIPS << self
+    @@ships << self
   end
 
   def self.all
-    SHIPS
+    @@ships
   end
 
   def self.clear
