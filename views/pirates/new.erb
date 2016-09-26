@@ -1,1 +1,42 @@
-<h1>Make your form here</h1>
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+</head>
+<body>
+<form method="POST" action="/pirates">
+  Pirate Name:<input type="text" name="pirate[name]"><br>
+  Pirate Weight:<input type="text" name="pirate[weight]"><br>
+  Pirate Height:<input type="text" name="pirate[height]"><br>
+  Ship Name:<input id="ship_name_1" type="text" name="pirate[ships][][name]"><br>
+  Ship Type:<input id="ship_type_1" type="text" name="pirate[ships][][type]"><br>
+  Ship Booty:<input id="ship_booty_1" type="text" name="pirate[ships][][booty]"><br>
+  Ship Name:<input id="ship_name_2" type="text" name="pirate[ships][][name]"><br>
+  Ship Type:<input id="ship_type_2" type="text" name="pirate[ships][][type]"><br>
+  Ship Booty:<input id="ship_booty_2" type="text" name="pirate[ships][][booty]"><br>
+  <input type="submit" value="Submit">
+</form>
+</body>
+</html>
+<!-- 
+    it "renders a new form element on the page" do
+      expect(last_response.body).to include("<form")
+      expect(last_response.body).to include("</form>")
+    end
+
+    it "renders the pirate input fields for name, weight, and height attributes on the page" do
+      expect(last_response.body).to include("pirate[name]")
+      expect(last_response.body).to include("pirate[weight]")
+      expect(last_response.body).to include("pirate[height]")
+    end
+
+    it "renders the first ship's input fields for the name, type, and booty attributes on the page" do
+      expect(last_response.body).to include("pirate[ships][][name]")
+      expect(last_response.body).to include("pirate[ships][][type]")
+      expect(last_response.body).to include("pirate[ships][][booty]")
+    end
+
+    it "renders the second ship's input field for the name, type, and booty attributes on the page" do
+      expect(last_response.body).to include("pirate[ships][][name]")
+      expect(last_response.body).to include("pirate[ships][][type]")
+      expect(last_response.body).to include("pirate[ships][][booty]") -->
