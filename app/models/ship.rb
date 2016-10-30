@@ -7,6 +7,10 @@ class Ship
     @@all
   end
 
+  def self.clear
+    @@all.clear
+  end
+
   def initialize(name, type, booty)
     @name = name
     @type = type
