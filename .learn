@@ -1,9 +1,15 @@
-tags:
-  - forms
-  - nested forms
-  - sinatra
-  - intermediate
-languages:
-  - ruby
-  - html
-resources: 2
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Pirates!</title>
+  </head>
+  <body>
+    <h1>Pirates!</h1>
+    <h3>Welcome to the Nested Forms Lab!</h3>
+    <h3>let's navigate to the '/new'</h3>
+
+
+    </form>
+  </body>
+</html>
