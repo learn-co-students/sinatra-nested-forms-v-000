@@ -1,7 +1,31 @@
 <h1>Display your Pirate here</h1>
-
+<%= @data[:pirate]["name"]+
+ @data[:pirate]["weight"]+
+ @data[:pirate]["height"] %>
 
 <h2>Display your first ship here</h2>
 
+<%= @data[:pirate]["ships"][0]["name"]+
+ @data[:pirate]["ships"][0]["type"]+
+ @data[:pirate]["ships"][0]["booty"] %>
+
+
+
 
 <h2>Display your second ship here</h2>
+<%= @data[:pirate]["ships"][1]["name"]+
+ @data[:pirate]["ships"][1]["type"]+
+ @data[:pirate]["ships"][1]["booty"] %>
+
+
+<%= @data[:"ship_name_1"] %>
+<%= @data[:"ship_booty_1"] %>
+<%= @data[:"ship_name_2"] %>
+<%= @data[:"ship_booty_2"] %>
+<%= @data[:"ship_name_1"] %>
+<%= @data[:"ship_type_1"] %>
+<%= @data[:"ship_type_2"] %>
+
+
+
+ 
