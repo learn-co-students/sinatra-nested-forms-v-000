@@ -1,1 +1,29 @@
-<h1>Make your form here</h1>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Setup New Pirates and Ships</title>
+  </head>
+  <body>
+    <h2>Create New Pirate and New Ships</h2>
+    <form class="" action="/pirates" method="post">
+      <h3>Enter the Pirate information:</h3>
+      <p><label for="Pirate Name">Pirate Name: </label><input type="text" name="pirate[name]" value=""></p>
+      <p><label for="Pirate Weight">Pirate Weight: </label><input type="text" name="pirate[weight]" value=""></p>
+      <p><label for="Pirate Height">Pirate Height: </label><input type="text" name="pirate[height]" value=""></p>
+
+      <h3>Enter the Ship 1 information:</h3>
+      <!--Specific id, ie "ship_name_1" is only required for Capybara to function properly, not for the functionality -->
+      <p><label for="Ship 1 Name">Ship 1 Name: </label><input id="ship_name_1" type="text" name="pirate[ships][][name]" value=""></p>
+      <p><label for="Ship 1 Type">Ship 1 Type: </label><input id="ship_type_1" type="text" name="pirate[ships][][type]" value=""></p>
+      <p><label for="Ship 1 Booty">Ship 1 Booty: </label><input id="ship_booty_1" type="text" name="pirate[ships][][booty]" value=""></p>
+
+      <h3>Enter the Ship 2 information:</h3>
+      <p><label for="Ship 2 Name">Ship 2 Name: </label><input id="ship_name_2" type="text" name="pirate[ships][][name]" value=""></p>
+      <p><label for="Ship 2 Type">Ship 2 Type: </label><input id="ship_type_2" type="text" name="pirate[ships][][type]" value=""></p>
+      <p><label for="Ship 2 Booty">Ship 2 Booty: </label><input id="ship_booty_2" type="text" name="pirate[ships][][booty]" value=""></p>
+
+      <input type="submit" id="Submit" value="Submit">
+    </form>
+  </body>
+</html>
