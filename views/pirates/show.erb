@@ -1,7 +1,17 @@
-<h1>Display your Pirate here</h1>
+<h1>New Pirate/Fleet Entry</h1>
+<h3>Pirate Name: <%= @pirate.name %></h3>
+<h5>Pirate Height: <%= @pirate.height %></h5>
+<h5>Pirate Weight: <%= @pirate.weight %></h5>
 
+<h3>Fleet Information</h3>
+<h5>Ship 1, <%= @ship1.name if @ship1 %></h5>
+<ul>
+  <li><%= @ship1.type if @ship1 %></li>
+  <li><%= @ship1.booty if @ship1 %></li>
+</ul>
 
-<h2>Display your first ship here</h2>
-
-
-<h2>Display your second ship here</h2>
+<h5>Ship 2, <%= @ship2.name if @ship2 %></h5>
+<ul>
+  <li><%= @ship2.type if @ship2 %></li>
+  <li><%= @ship2.booty if @ship2 %></li>
+</ul>
