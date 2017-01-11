@@ -6,6 +6,11 @@ gem 'shotgun'
 gem 'pry'
 gem 'tux'
 gem 'require_all'
+  
+gem 'sqlite3'
+gem 'activerecord', :require => 'active_record'
+gem 'sinatra-activerecord', :require => 'sinatra/activerecord'
+gem 'rake'
 
 group :test do
   gem 'rspec'

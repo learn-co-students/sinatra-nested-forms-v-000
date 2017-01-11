@@ -13,12 +13,15 @@ module FormsLab
     end
     
     post '/pirates' do
-    	# binding.pry
-    	@pirate = Pirate.new(params["pirate"])
-      params["pirate"]["ships"].each do |ship|
-      	Ship.new(ship)
+    	
+    	@pirate = Pirate.new(params["pirate"].select{|k,v| k != "ships"})
+      params["pirate"]["ships"].each do |ship_data|
+      	ship = Ship.new(ship_data)
+      	ship.pirate = @pirate
+      	ship.save
+      	#save the pirate and assosiate it with the ships 
       end
-  	  @ships = Ship.all
+  	  @ships = Ship.all 
       
     	erb :"pirates/show"
     end

@@ -1,22 +1,23 @@
-class Pirate
-	attr_accessor :name, :weight, :height
+class Pirate < ActiveRecord::Base
+	has_many :ships
+ # attr_accessor :name, :weight, :height
   
-  PIRATES = []
+ #  PIRATES = []
 
-	def initialize(hash)
-		@name = hash["name"]
-		@weight = hash["weight"]
-		@height = hash["height"]
+	# def initialize(hash)
+	# 	@name = hash["name"]
+	# 	@weight = hash["weight"]
+	# 	@height = hash["height"]
 
-		PIRATES << self
-	end
+	# 	PIRATES << self
+	# end
   
-  def self.all
-  	PIRATES
-  end
+ #  def self.all
+ #  	PIRATES
+ #  end
 
-  def self.clear
-  	PIRATES.clear
-  end
+ #  def self.clear
+ #  	PIRATES.clear
+ #  end
 
 end
