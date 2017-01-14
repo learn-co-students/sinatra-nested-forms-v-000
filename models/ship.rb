@@ -17,6 +17,6 @@ class Ship
 
 
   def self.clear
-    @@ships = []
+    @@ships.clear
   end
 end
