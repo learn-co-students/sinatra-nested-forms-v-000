@@ -1,0 +1,14 @@
+<h1>Fill out this form!</h1>
+
+<form action="/pirates" method="post">
+  Pirate Name: <input id="pirate_name" type="text" name="pirate[name]"><br><br>
+  Pirate Height: <input id="pirate_height" type="text" name="pirate[height]"><br><br>
+  Pirate Weight: <input id="pirate_weight" type="text" name="pirate[weight]"><br><br>
+  Ship Name: <input id="ship_name_1" type="text" name="pirate[ships][][name]"><br><br>
+  Ship Type: <input id="ship_type_1" type="text" name="pirate[ships][][type]"><br><br>
+  Ship Booty: <input id="ship_booty_1" type="text" name="pirate[ships][][booty]"><br><br>
+  Ship Name: <input id="ship_name_2" type="text" name="pirate[ships][][name]"><br><br>
+  Ship Type: <input id="ship_type_2" type="text" name="pirate[ships][][type]"><br><br>
+  Ship Booty: <input id="ship_booty_2" type="text" name="pirate[ships][][booty]"><br><br>
+  <button type="submit" value="submit">Submit<button>
+</form>
