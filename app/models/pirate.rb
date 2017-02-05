@@ -15,4 +15,5 @@ class Pirate
 
   def self.clear
     @@pirates.clear
+  end
 end
