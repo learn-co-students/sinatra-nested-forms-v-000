@@ -3,11 +3,8 @@
 <h1><%=@pirate.height%></h1>
 
 
-<h2><%=@ship1.name%></h2>
-<h2><%=@ship1.type%></h2>
-<h2><%=@ship1.booty%></h2>
-
-
-<h2><%=@ship2.name%></h2>
-<h2><%=@ship1.type%></h2>
-<h2><%=@ship1.booty%></h2>
+<h2><%@ships.each do |each|%></h2>
+<h2><%=each.name%></h2>
+<h2><%=each.type%></h2>
+<h2><%=each.booty%></h2>
+<h2><%end%></h2>
