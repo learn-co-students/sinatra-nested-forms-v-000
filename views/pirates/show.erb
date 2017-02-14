@@ -1,10 +1,16 @@
-<h1><%=@pirate.name%></h1>
-<h1><%=@pirate.weight%></h1>
-<h1><%=@pirate.height%></h1>
+<br></br>
+<h1>--Pirate's Details--</h1>
+<h2>Pirate's name: <%=@pirate.name%></h2>
+<h2>Pirate's weight: <%=@pirate.weight%></h2>
+<h2>Pirate's height: <%=@pirate.height%></h2>
 
+<br></br>
 
-<h2><%@ships.each do |each|%></h2>
-<h2><%=each.name%></h2>
-<h2><%=each.type%></h2>
-<h2><%=each.booty%></h2>
+<h1>--His Ship's Details--</h1>
+<%@ships.each_with_index do |each, index|%>
+<h2><em>Ship no <%="#{index + 1}"%></em></h2>
+<h2>Name: <%=each.name%></h2>
+<h2>Type:  <%=each.type%></h2>
+<h2>Booty:  <%=each.booty%></h2>
+<br></br>
 <h2><%end%></h2>
