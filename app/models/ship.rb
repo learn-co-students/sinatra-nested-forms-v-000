@@ -6,6 +6,7 @@ class Ship
   def initialize(attributes)
     attributes.each {|k, v|
       self.send(("#{k}="), v)}
+      @@all << self
   end
 
   def self.all

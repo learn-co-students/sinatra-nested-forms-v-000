@@ -1,5 +1,5 @@
 class Pirate
-  attr_accessor :name, :weight, :height
+  attr_accessor :name, :weight, :height, :ships
 
   def initialize(attributes_hash)
     attributes_hash.each {|k, v|
