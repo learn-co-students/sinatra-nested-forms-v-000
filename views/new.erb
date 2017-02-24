@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+ <html>
+   <head>
+     <title>New</title>
+   </head>
+
+   <body>
+
+    <h1>Choose Your Pirate and Ships</h1>
+
+    <form method = "POST" action = "/pirates">
+      <h2>PIRATE</h2>
+      <label for "pirate[name]">Name</label>
+      <input type = "text" name = "pirate[name]">
+      <label for "pirate[weight]">Weight</label>
+      <input type = "text" name = "pirate[weight]">
+      <label for "pirate[height]">Height</label>
+      <input type = "text" name = "pirate[height]">
+      <h2>SHIPS</h2>
+      <label for "ship_name_1">Ship 1 Name</label>
+      <input type = "text" name = "pirate[ships][][name]">
+      <label for "ship_type_1">Ship 1 Type</label>
+      <input type = "text" name = "pirate[ships][][type]">
+      <label for "ship_booty_1">Ship 1 Booty</label>
+      <input type = "text" name = "pirate[ships][][booty]">
+      <br>
+      <label for "ship_name_2">Ship 2 Name</label>
+      <input type = "text" name = "pirate[ships][][name]">
+      <label for "ship_type_2">Ship 2 Type</label>
+      <input type = "text" name = "pirate[ships][][type]">
+      <label for "ship_booty_2">Ship 2 Booty</label>
+      <input type = "text" name = "pirate[ships][][booty]">
+      <br>
+      <label for "submit">Submit</label>
+      <input type = "submit" value = "submit">
+    </form>
+
+  </body>
+
+</html>
