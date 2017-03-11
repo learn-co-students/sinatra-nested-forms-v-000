@@ -2,7 +2,7 @@
 
 ## Overview
 
-In this lab, you'll practice using nested forms in Sinatra.
+In this lab, you'll practice using nested forms in Sinatra. Alright!
 
 ## Instructions
 
