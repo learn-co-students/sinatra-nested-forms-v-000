@@ -16,9 +16,9 @@
 <h2>Display your first ship here</h2>
 <% @ships.each do |ship| %>
   <div class = "ship">
-    <p>Ship: <%= Ship.name %></p><br>
-    <p>Type: <%= Ship.type %></p><br>
-    <p>Type: <%= Ship.booty %></p><br>
+    <p>Ship: <%= ship.name %></p><br>
+    <p>Type: <%= ship.type %></p><br>
+    <p>Booty: <%= ship.booty %></p><br>
   </div><br>
 <% end %>
 
