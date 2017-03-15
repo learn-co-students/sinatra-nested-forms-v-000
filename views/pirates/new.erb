@@ -1,25 +1,14 @@
 <h1>Make your form here</h1>
 
-
 <form action="/student" method="post">
-  Pirate Name: <input type="text" name="pirate[name]">
-  Pirate Weight: <input type="text" name="pirate[weight]">
-  Pirate Height: <input type="text" name="pirate[height]">
-  Ship 1 Name: <input id="ship_name_1" type="text" name="pirate[ships][][name]">
-  Ship 1 Type: <input id="ship_type_1" type="text" name="pirate[ships][][type]">
-  Ship 1 Booty: <input id="ship_booty_1" type="text" name="pirate[ships][][booty]">
-  Ship 2 Name: <input id="ship_name_2" type="text" name="pirate[ships][][name]">
-  Ship 2 Type: <input id="ship_type_2" type="text" name="pirate[ships][][type]">
-  Ship 2 Booty: <input id="ship_booty_2" type="text" name="pirate[ships][][booty]">
-  <input type="submit">
+  pirate[name] <input id=pirate[name] type="text" name="pirate[name]">
+  pirate[weight] <input id=pirate[weight] type="text" name="pirate[weight]">
+  pirate[height] <input id=pirate[height] type="text" name="pirate[height]">
+  ship_name_1 <input id="ship_name_1" type="text" name="pirate[ships][][name]">
+  ship_type_1 <input id="ship_type_1" type="text" name="pirate[ships][][type]">
+  ship_type_1 <input id="ship_booty_1" type="text" name="pirate[ships][][booty]">
+  ship_name_2 <input id="ship_name_2" type="text" name="pirate[ships][][name]">
+  ship_type_2 <input id="ship_type_2" type="text" name="pirate[ships][][type]">
+  ship_booty_2 <input id="ship_booty_2" type="text" name="pirate[ships][][booty]">
+  <input type="submit">Submit</input>
 </form>
-
-fill_in("pirate[name]", :with => "Captain Jack Sparrow")
-fill_in("pirate[weight]", :with => "190 lbs")
-fill_in("pirate[height]", :with => "5 feet 11 inches")
-fill_in("ship_name_1", :with => "Flying Dutchman")
-fill_in("ship_type_1", :with => "ghost ship")
-fill_in("ship_booty_1", :with => "gold coins")
-fill_in("ship_name_2", :with => "Black Pearl")
-fill_in("ship_type_2", :with => "merchant vessel")
-fill_in("ship_booty_2",
