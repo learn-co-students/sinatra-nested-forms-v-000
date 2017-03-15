@@ -1,12 +1,11 @@
 require './environment'
-require 'pry'
 
 module FormsLab
   class App < Sinatra::Base
 
     # code other routes/actions here
     get '/' do
-      "Welcome to the Nested Forms Lab! let's navigate to the <a href='/new'>'/new'</a>"
+      "Welcome to the Nested Forms Lab! let's navigate to the '/new'; click <a href='/new'>here</a>."
     end
 
     get '/new' do
