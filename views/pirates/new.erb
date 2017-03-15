@@ -1,6 +1,14 @@
-<h1>Make your form here</h1>
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <title>Pirate and Ship Registry</title>
+ </head>
+ <body>
 
-<form action="/student" method="post">
+<h1>Enter pirate and ship information below:</h1>
+
+<form action="/pirates" method="post">
   pirate[name] <input id=pirate[name] type="text" name="pirate[name]">
   pirate[weight] <input id=pirate[weight] type="text" name="pirate[weight]">
   pirate[height] <input id=pirate[height] type="text" name="pirate[height]">
@@ -10,5 +18,7 @@
   ship_name_2 <input id="ship_name_2" type="text" name="pirate[ships][][name]">
   ship_type_2 <input id="ship_type_2" type="text" name="pirate[ships][][type]">
   ship_booty_2 <input id="ship_booty_2" type="text" name="pirate[ships][][booty]">
-  <input type="submit">Submit</input>
+  <input type="submit">
 </form>
+</body>
+</html>
