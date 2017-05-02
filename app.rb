@@ -5,7 +5,7 @@ module FormsLab
 
     # code other routes/actions here
     get '/' do
-      erb :'pirates/new'
+      erb :root
     end
 
 
@@ -15,12 +15,13 @@ module FormsLab
 
     post '/pirates' do
       @pirate = Pirate.new(params[:pirate])
-      puts "params #{params[:pirate]}"
+
       params[:pirate][:ships].each do |details|
         Ship.new(details)
       end
+      
       @ships = Ship.all
-      puts "#{@ships}"
+
 
 
       erb :'pirates/show'
