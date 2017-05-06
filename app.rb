@@ -1,6 +1,5 @@
 require './environment'
-require_relative 'app/models/pirate.rb'
-require_relative 'app/models/ship.rb'
+require 'pry'
 
 module FormsLab
   class App < Sinatra::Base
@@ -16,11 +15,14 @@ module FormsLab
 
     post '/pirates' do
       @pirate = Pirate.new(params[:pirate])
+
       params[:pirate][:ships].each do |info|
         Ship.new(info)
       end
 
       @ships = Ship.all
+
+      binding.pry
 
       erb :'pirates/show'
     end
