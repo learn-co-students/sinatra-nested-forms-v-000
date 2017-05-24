@@ -3,10 +3,10 @@ class Pirate
 
   @@all = []
 
-  def initialize(params)
-    @name = params[:name]
-    @weight = params[:weight]
-    @height = params[:height]
+  def initialize(attrib_hash)
+    @name = attrib_hash[:name]
+    @weight = attrib_hash[:weight]
+    @height = attrib_hash[:height]
     @@all << self
   end
 
