@@ -1,5 +1,4 @@
-<h1>Make your form here</h1>
-<!--Student Name: <input type="text" name="student[name]"> -->
+<h1>Pirate Input Form</h1>
 
 <form action="/pirates" method="post">
 
@@ -11,21 +10,15 @@
   <label for="pirate_height">Height:</label></br>
     <input type="text" name="pirate[height]" id="pirate_height"></br></br>
 
-  <h1>Pirate's Ship 1</h1>
-  <label for="ship_name_1">Name:</label></br>
-    <input type="text" name="pirate[ships][][name]" id="ship_name_1"></br>
-  <label for="ship_type_1">Type:</label></br>
-    <input type="text" name="pirate[ships][][type]" id="ship_type_1"></br>
-  <label for="ship_booty_1">Booty:</label></br>
-    <input type="text" name="pirate[ships][][booty]" id="ship_booty_1"></br></br>
-
-  <h1>Pirate's Ship 2</h1>
-  <label for="ship_name_2">Name:</label></br>
-    <input type="text" name="pirate[ships][][name]" id="ship_name_2"></br>
-  <label for="ship_type_2">Type:</label></br>
-    <input type="text" name="pirate[ships][][type]" id="ship_type_2"></br>
-  <label for="ship_booty_2">Booty:</label></br>
-    <input type="text" name="pirate[ships][][booty]" id="ship_booty_2"></br>
+  <% for i in 1..2%>
+    <h1>Pirate's Ship <%= i %></h1>
+    <label for=<%= "ship_name_#{i}"%>>Name:</label></br>
+      <input type="text" name="pirate[ships][][name]" id=<%= "ship_name_#{i}"%>></br>
+    <label for=<%= "ship_type_#{i}"%>>Type:</label></br>
+      <input type="text" name="pirate[ships][][type]" id=<%= "ship_type_#{i}"%>></br>
+    <label for=<%= "ship_booty_#{i}"%>>Booty:</label></br>
+      <input type="text" name="pirate[ships][][booty]" id=<%= "ship_booty_#{i}"%>></br></br>
+  <% end %>
 
   <input id="Submit" type="submit">
 </form>
