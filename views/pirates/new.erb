@@ -1,1 +1,19 @@
-<h1>Make your form here</h1>
+<div class="floating-box">
+  <h1>Make your form here</h1>
+  <form action="/pirates" method="post">
+    <h3>Pirate</h3>
+    <input type="text" placeholder="Name" name="pirate[name]"/>
+    <input type="text" placeholder="Weight" name="pirate[weight]"/>
+    <input type="text" placeholder="Height" name="pirate[height]"/>
+    <h3>Ship 1</h3>
+    <input type="text" id="ship_name_1" placeholder="Name" name="pirate[ships][][name]"/>
+    <input type="text" id="ship_type_1" placeholder="Type" name="pirate[ships][][type]"/>
+    <input type="text" id="ship_booty_1" placeholder="Booty" name="pirate[ships][][booty]"/>
+    <h3>Ship 2</h3>
+    <input type="text" id="ship_name_2" placeholder="Name" name="pirate[ships][][name]"/>
+    <input type="text" id="ship_type_2" placeholder="Type" name="pirate[ships][][type]"/>
+    <input type="text" id="ship_booty_2" placeholder="Booty" name="pirate[ships][][booty]"/>
+    <br />
+    <input type="submit" id="Submit" class="btn btn-primary"/>
+  </form>
+</div>
