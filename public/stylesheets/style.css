@@ -1,3 +1,24 @@
 body{
-  background: url('../images/back.jpg')
+  background: linear-gradient( rgba(0,0,0,.5), rgba(0,0,0,.5) ), url('../images/back.jpg') center no-repeat;
+  background-size: cover;
+}
+.floating-box{
+  text-align: center;
+  background: #bfb69e;
+  margin: 15px auto;
+  padding: 5px;
+  border-radius: 8px;
+  box-shadow: 0px 8px 25px;
+}
+
+.pirate{
+  width: 70%;
+}
+
+.ship{
+  width: 60%;
+}
+
+.floating-box ul, .floating-box ol{
+  text-align: left;
 }
