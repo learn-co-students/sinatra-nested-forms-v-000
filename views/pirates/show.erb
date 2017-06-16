@@ -1,7 +1,29 @@
-<h1>Display your Pirate here</h1>
+<%
+#this just loads everything into the model before displaying
+@pirate = Pirate.new
+@pirate.name = params[:pirate][:name]
+@pirate.weight = params[:pirate][:weight]
+@pirate.height = params[:pirate][:height]
 
 
-<h2>Display your first ship here</h2>
+params[:pirate][:ships].each {|param_ship|
+                     ship = Ship.new
+                     ship.name = param_ship[:name]
+                     ship.type = param_ship[:type]
+                     ship.booty = param_ship[:booty]
+                   }
+%>
 
 
-<h2>Display your second ship here</h2>
+<h1>Display your Pirate harrrrr</h1>
+<p> Pirate Name: <%= @pirate.name %> </p>
+<p> Pirate Weight: <%= @pirate.weight %> </p>
+<p> Pirate Height: <%= @pirate.height %> </p>
+<br>
+<h1>Display your Ship harrrrr</h1>
+<% Ship.all.each {|ship|%>
+<h5> A ship: </h5>
+<p> Ship Name: <%=ship.name%> </p>
+<p> Ship type: <%=ship.type%> </p>
+<p> Ship booty: <%=ship.booty%> </p>
+<%}%>
