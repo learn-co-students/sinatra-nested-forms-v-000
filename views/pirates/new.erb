@@ -1,1 +1,53 @@
-<h1>Make your form here</h1>
+<h1>Create A Pirate</h1>
+<form action="/pirates" method="post">
+  <p>
+  <label for="pirate_name">Name:</label>
+  <input type="text" name="pirate[name]" id="pirate_name">
+  <label for="pirate_weight">Weight:</label>
+  <input type="text" name="pirate[weight]" id="pirate_weight">
+  <label for="pirate_name">Height:</label>
+  <input type="text" name="pirate[height]" id="pirate_height">
+  </p>
+
+  <h3>Ship 1</h3>
+  <p>
+  <label for="ship_name_1">Name:</label>
+  <input type="text" name="pirate[ships][][name]" id="ship_name_1">
+  <label for="ship_type_1">Type:</label>
+  <input type="text" name="pirate[ships][][type]" id="ship_type_1">
+  <label for="ship_booty_1">Booty:</label>
+  <input type="text" name="pirate[ships][][booty]" id="ship_booty_1">
+  </p>
+
+  <h3>Ship 2</h3>
+  <p>
+  <label for="ship_name_2">Name:</label>
+  <input type="text" name="pirate[ships][][name]" id="ship_name_2">
+  <label for="ship_type_2">Type:</label>
+  <input type="text" name="pirate[ships][][type]" id="ship_type_2">
+  <label for="ship_booty_2">Booty:</label>
+  <input type="text" name="pirate[ships][][booty]" id="ship_booty_2">
+  </p>
+  <br>
+  <input type="submit" name="Submit" id="Submit">
+</form>
+
+<!-- params {
+  pirate => {
+    name => ,
+    weight => ,
+    height => ,
+    ship => [
+      {
+        name => ,
+        type => ,
+        booty =>
+      },
+      {
+        name => ,
+        type => ,
+        booty =>
+      }
+    ]
+  }
+} -->
