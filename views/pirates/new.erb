@@ -1,1 +1,18 @@
-<h1>Make your form here</h1>
+<h1>Arrrrr, what do ye know abouta Pirate, m'matey??</h1>
+
+<form action="/pirates" method="post">
+  <label for="pirate_name">Name o' th' Scallywag: </label><input id="pirate_name" type="text" name="pirate[name]" placeholder="Out with it!!"><br>
+  <label for="pirate_weight">And was they a heavy one?: </label><input id="pirate_weight" type="text" name="pirate[weight]" placeholder="Ya scurvy dog!"><br>
+  <label for="pirate_height">How high did 'e stand?': </label><input id="pirate_height" type="text" name="pirate[height]" placeholder="I'll 'ave ye walk the plank!'"><br>
+
+  <h2>And about the ships...</h2>
+
+  <label for="ship_name_1">What was her name, then?: </label><input id="ship_name_1" type="text" name="pirate[ships][][name]" placeholder="Aye, she was a beauty..."><br>
+  <label for="ship_type_1">And th' type o' her build?: </label><input id="ship_type_1" type="text" name="pirate[ships][][type]" placeholder="Ye don't say??"> <br>
+  <label for="ship_booty_1">What was below th'deck?: </label><input id="ship_booty_1" type="text" name="pirate[ships][][booty]" placeholder="Arrr...."> <br>
+  <br><br>
+  <label for="ship_name_2">What was her name, then?: </label><input id="ship_name_2" type="text" name="pirate[ships][][name]" placeholder="Aye, she was a beauty..."> <br>
+  <label for="ship_type_2">And th' type o' her build?: </label><input id="ship_type_2" type="text" name="pirate[ships][][type]" placeholder="Ye don't say??"> <br>
+  <label for="ship_booty_2">What was below th'deck?: </label><input  id="ship_booty_2" type="text" name="pirate[ships][][booty]" placeholder="Arrr...."> <br>
+  <input type="submit" title="Submit">
+</form>
