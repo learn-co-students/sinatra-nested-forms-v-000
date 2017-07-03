@@ -3,10 +3,10 @@ class Ship
 
   SHIPS = []
 
-  def initialize(name, type, booty)
-    @name = name
-    @type = type
-    @booty = booty
+  def initialize(arguments)
+    @name = arguments[:name]
+    @type = arguments[:type]
+    @booty = arguments[:booty]
 
     SHIPS << self
   end
@@ -16,7 +16,7 @@ class Ship
   end
 
   def self.clear
-    SHIPS.clear
+    self.all.clear
   end
 
 end
