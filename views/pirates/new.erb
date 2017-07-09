@@ -1,1 +1,77 @@
-<h1>Make your form here</h1>
+<form method="post" action="/pirates">
+
+  <fieldset>
+    <legend>Pirate</legend>
+    <ul>
+      <li>
+        <label for="pirate[name]">
+          Name:
+          <input id="pirate[name]" type="text" name="pirate[name]" >
+        </label>
+      </li>
+      <li>
+        <label for="pirate[weight]">
+          Weight:
+          <input id="pirate[weight]" type="text" name="pirate[weight]" >
+        </label>
+      </li>
+      <li>
+        <label for="pirate[height]">
+          Height:
+          <input id="pirate[height]" type="text" name="pirate[height]" >
+        </label>
+      </li>
+    </ul>
+  </fieldset>
+
+  <fieldset>
+    <legend>Ship 1</legend>
+    <ul>
+      <li>
+        <label for="pirate[ships][][name]">
+          Name:
+          <input id="ship_name_1" type="text" name="pirate[ships][][name]" >
+        </label>
+      </li>
+      <li>
+        <label for="pirate[ships][][type]">
+          Type:
+          <input id="ship_type_1" type="text" name="pirate[ships][][type]" >
+        </label>
+      </li>
+      <li>
+        <label for="pirate[ships][][booty]">
+          Booty:
+          <input id="ship_booty_1" type="text" name="pirate[ships][][booty]" >
+        </label>
+      </li>
+    </ul>
+  </fieldset>
+
+  <fieldset>
+    <legend>Ship 2</legend>
+    <ul>
+      <li>
+        <label for="pirate[ships][][name]">
+          Name:
+          <input id="ship_name_2" type="text" name="pirate[ships][][name]" >
+        </label>
+      </li>
+      <li>
+        <label for="pirate[ships][][type]">
+          Type:
+          <input id="ship_type_2" type="text" name="pirate[ships][][type]" >
+        </label>
+      </li>
+      <li>
+        <label for="pirate[ships][][booty]">
+          Booty:
+          <input id="ship_booty_2" type="text" name="pirate[ships][][booty]" >
+        </label>
+      </li>
+    </ul>
+  </fieldset>
+
+  <input id="Submit" type="submit" name="Submit">
+
+</form>
