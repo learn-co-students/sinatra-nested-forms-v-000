@@ -3,12 +3,12 @@
 <h5><%= "Weight: #{@thief.weight}" %></h5>
 <h5><%= "Height: #{@thief.height}" %></h5>
 
-<h2>First Ship</h2>
-<h5><%= "Ship 1 Name: #{@shippy[0].name}" %></h5>
-<h5><%= "Ship 1 Type: #{@shippy[0].type}" %></h5>
-<h5><%= "Ship 1 Booty: #{@shippy[0].booty}" %></h5>
 
-<h2>Second Ship</h2>
-<h5><%= "Ship 2 Name: #{@shippy[1].name}" %></h5>
-<h5><%= "Ship 2 Type: #{@shippy[1].type}" %></h5>
-<h5><%= "Ship 2 Booty: #{@shippy[1].booty}" %></h5>
+
+<h2>Ships</h2>
+<% @shippy.each do |ship| %>
+<h5><%= "Ship Name: #{ship.name}" %></h5>
+<h5><%= "Ship Type: #{ship.type}" %></h5>
+<h5><%= "Ship Booty: #{ship.booty}" %></h5>
+<br>
+<% end %>
