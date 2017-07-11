@@ -1,0 +1,8 @@
+<h1>Ships!</h1>
+<ul>
+<% @ships.each do |ship| %>
+  <li>Ship Name: <%= ship.name %></li>
+    <li>Ship Type: <%= ship.type %></li>
+    <li>Ship Booty: <%= ship.booty %></li>
+<% end %>
+</ul>
