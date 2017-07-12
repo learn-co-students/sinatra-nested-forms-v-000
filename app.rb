@@ -1,7 +1,7 @@
 require 'pry'
 require './environment'
-#require_relative './models/pirate.rb'
-#require_relative './models/ship.rb'
+# require_relative './models/pirate.rb'
+# require_relative './models/ship.rb'
 
 module FormsLab
   class App < Sinatra::Base
@@ -18,6 +18,7 @@ module FormsLab
     end
 
     post '/pirates' do
+
       @pirate= Pirate.new(params[:pirate])
       params[:pirate][:ships].each do |details|
         Ship.new(details)
