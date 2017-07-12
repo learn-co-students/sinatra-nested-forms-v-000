@@ -1,4 +1,4 @@
-class Ship < ActiveRecord::Base
+class Ship
   attr_accessor :name, :type, :booty
   SHIPS = []
   def initialize(args)
@@ -10,5 +10,9 @@ class Ship < ActiveRecord::Base
 
   def self.all
     SHIPS
+  end
+
+  def self.clear
+    SHIPS.clear
   end
 end
