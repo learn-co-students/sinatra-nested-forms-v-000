@@ -1,0 +1,7 @@
+<h1>Welcome to the Nested Forms Lab!</h1>
+<p>let's navigate to the '/new'</p>
+<% @pirates.each do |pirate| %>
+  <li>Name: <%= pirate.name %></li>
+    <li>Weight: <%= pirate.weight %></li>
+    <li>Height: <%= pirate.height %></li>
+<% end %>
