@@ -6,7 +6,7 @@
   </head>
   <body>
     <h1>Welcome to the Nested Forms Lab!</h1>
-    <form class="" action="/pirates" method="post">
+    <form action="/pirates" method="post">
       <p>Pirate name: </p>
       <p><input type="text" name="pirate[name]" ></p>
       <p>Pirate weight: </p>
@@ -25,7 +25,7 @@
       <p><input id="ship_booty_2" type="text" name="pirate[ships][][booty]"></p>
       <p>Ship2 type: </p>
       <p><input id="ship_type_2" type="text" name="pirate[ships][][type]"></p>
-      <input type="submit" name="Submit">
+      <button type="submit" name="Submit"></button>
     </form>
   </body>
 </html>
