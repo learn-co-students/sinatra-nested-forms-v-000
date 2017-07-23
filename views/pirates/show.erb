@@ -3,11 +3,9 @@
 <h3> Pirate Height: <%= @pirate.height %> </h3>
 <br>
 
-<h1> First Ship Name: <%= @ships.first.name %> </h1>
-<h3> First Ship Type: <%= @ships.first.type %> </h3>
-<h3> First Ship Booty: <%= @ships.first.booty %> </h3>
-<br>
-
-<h1> Second Ship Name: <%= @ships.last.name %> </h1>
-<h3> Second Ship Type: <%= @ships.last.type %> </h3>
-<h3> Second Ship Booty: <%= @ships.last.booty %> </h3>
+<% @ships.each do |ship| %>
+  <h1> Ship Name: <%= ship.name %> </h1>
+  <h3> Ship Type: <%= ship.type %> </h3>
+  <h3> Ship Booty: <%= ship.booty %> </h3>
+  <br>
+<% end %>
