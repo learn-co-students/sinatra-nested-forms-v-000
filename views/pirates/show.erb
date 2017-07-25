@@ -1,7 +1,32 @@
 <h1>Display your Pirate here</h1>
+<% name = params[:pirate][:name] %>
+<% height = params[:pirate][:height] %>
+<% weight =  params[:pirate][:weight] %>
+<% @pirate = Pirate.new(name, weight, height) %>
 
+<h2>Pirate Name: <%= @pirate.name %></h2>
+<h2>Pirate Weight: <%= @pirate.weight %></h2>
+<h2>Pirate Height: <%= @pirate.height %></h2>
 
 <h2>Display your first ship here</h2>
 
+<% name = params[:pirate][:ships].first[:name] %>
+<% type = params[:pirate][:ships].first[:type] %>
+<% booty = params[:pirate][:ships].first[:booty] %>
+<% @ship = Ship.new(name, type, booty) %>
+
+<h2>Ship Name: <%= @ship.name %></h2>
+<h2>Ship Type: <%= @ship.type %></h2>
+<h2>Ship Booty: <%= @ship.booty %></h2>
+
 
 <h2>Display your second ship here</h2>
+
+<% name = params[:pirate][:ships].last[:name] %>
+<% type = params[:pirate][:ships].last[:type] %>
+<% booty = params[:pirate][:ships].last[:booty] %>
+<% @ship = Ship.new(name, type, booty) %>
+
+<h2>Ship Name: <%= @ship.name %></h2>
+<h2>Ship Type: <%= @ship.type %></h2>
+<h2>Ship Booty: <%= @ship.booty %></h2>
