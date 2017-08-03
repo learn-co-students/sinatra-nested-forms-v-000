@@ -1,0 +1,28 @@
+<h1>Welcome to Pirates and Ships!</h1>
+<h3>Please enter your details below for registration:</h3>
+
+<form action="/pirates" method="post">
+  <div class="pirate">
+    <h3>Pirate Name: <input type="text" name="pirate[name]"></h3>
+    <h3>Pirate Weight: <input type="text" name="pirate[weight]"></h3>
+    <h3>Pirate Height: <input type="text" name="pirate[height]"></h3>
+  </div>
+
+  <div class="ship">
+    <h2>Ship 1</h2>
+    <h3>Ship Name:<input type="text" name="pirate[ships][][name]"
+      id="ship_name_1"></h3>
+    <h3>Ship Type:<input type="text" name="pirate[ships][][type]"
+      id="ship_type_1"></h3>
+    <h3>Ship Booty:<input type="text" name="pirate[ships][][booty]"
+      id="ship_booty_1"></h3>
+    <h2>Ship 2</h2>
+    <h3>Ship Name<input type="text" name="pirate[ships][][name]"
+      id="ship_name_2"></h3>
+    <h3>Ship Type:<input type="text" name="pirate[ships][][type]"
+      id="ship_type_2"></h3>
+    <h3>Ship Booty:<input type ="text" name="pirate[ships][][booty]"
+      id="ship_booty_2"></h3>
+  </div>
+    <input type="submit" value="Submit">
+</form>
