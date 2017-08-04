@@ -1,7 +1,58 @@
-<h1>Display your Pirate here</h1>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Show Pirate!</title>
+    <link rel="stylesheet" href="/stylesheets/bootstrap.min.css">
+  </head>
+  <body>
+    <div class="container" style="background-color: red">
+      <div class="header" style="background-color: blue">
+        <h1>Display your Pirate here</h1>
+        <hr>
+      </div>
+
+      <!-- pirate name -->
+      <table class="table table-hover" style="color: white">
+        <thead>
+          <th>Pirate Name</th>
+          <th>Pirate Weight</th>
+          <th>Pirate Height</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td><%= @pirate.name %></td>
+            <td><%= @pirate.weight %></td>
+            <td><%= @pirate.height %></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <hr>
+
+      <h3 style="color: white">Ships:</h3>
+
+      <hr>
+
+      <% @pirate.ships.each do |ship| %>
+        <table class="table table-hover" style="color: white">
+          <thead>
+            <th>Ship Name</th>
+            <th>Ship Type</th>
+            <th>Ship Booty</th>
+          </thead>
+          <tbody>
+            <td><%= ship.name %></td>
+            <td><%= ship.type %></td>
+            <td><%= ship.booty %></td>
+          </tbody>
+        </table>
+        
+        <hr>
+
+      <% end %>
+    </div>
 
 
-<h2>Display your first ship here</h2>
-
-
-<h2>Display your second ship here</h2>
+  </body>
+</html>

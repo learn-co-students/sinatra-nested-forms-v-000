@@ -1,1 +1,116 @@
-<h1>Make your form here</h1>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>New Pirate!</title>
+    <link rel="stylesheet" href="/stylesheets/bootstrap.min.css">
+  </head>
+  <body>
+    <div class="container" style="background-color: red;">
+      <div class="header" style="background-color: blue; color: white">
+        <h1>Create your own Pirate!!</h1>
+        <hr>
+      </div>
+
+      <form action="/pirates" method="post" class="form-horizontal">
+
+        <!-- pirate name -->
+        <div class="form-group">
+          <label for="pirate_name" class="col-sm-2 control-label" style="color: white">Pirate Name</label>
+          <div class="col-sm-10">
+            <input type="text" name="pirate[name]" class="form-control" id="pirate_name" placeholder="enter pirate name here...">
+          </div>
+        </div>
+
+        <br>
+
+        <!-- pirate weight -->
+        <div class="form-group">
+          <label for="pirate_weight" class="col-sm-2 control-label" style="color: white">Pirate Weight</label>
+          <div class="col-sm-10">
+            <input type="text" name="pirate[weight]" class="form-control" id="pirate_weight" placeholder="enter pirate weight here...">
+          </div>
+        </div>
+
+        <br>
+
+        <!-- pirate height -->
+        <div class="form-group">
+          <label for="pirate_height" class="col-sm-2 control-label" style="color: white">Pirate Height</label>
+          <div class="col-sm-10">
+            <input type="text" name="pirate[height]" class="form-control" id="pirate_height" placeholder="enter pirate height here...">
+          </div>
+        </div>
+
+        <br>
+
+        <!-- pirate ship 1 name -->
+        <div class="form-group">
+          <label for="ship_name_1" class="col-sm-2 control-label" style="color: white">Pirate Ship 1 Name</label>
+          <div class="col-sm-10">
+            <input type="text" name="pirate[ships][][name]" class="form-control" id="ship_name_1" class="form-control" id="pirate_ship_1_name" placeholder="enter pirate ship 1 name here...">
+          </div>
+        </div>
+
+        <br>
+
+        <!-- pirate ship 1 type -->
+        <div class="form-group">
+          <label for="ship_type_1" class="col-sm-2 control-label" style="color: white">Pirate Ship 1 Type</label>
+          <div class="col-sm-10">
+            <input type="text" name="pirate[ships][][type]" id="ship_type_1" class="form-control" placeholder="enter pirate ship 1 type here...">
+          </div>
+        </div>
+
+        <br>
+
+        <!-- pirate ship 1 booty -->
+        <div class="form-group">
+          <label for="ship_booty_1" class="col-sm-2 control-label" style="color: white">Pirate Ship 1 Booty</label>
+          <div class="col-sm-10">
+              <input type="text" name="pirate[ships][][booty]" id="ship_booty_1" class="form-control" placeholder="enter pirate ship 1 booty here...">
+          </div>
+        </div>
+
+        <br>
+
+        <!-- pirate ship 2 name -->
+        <div class="form-group">
+          <label for="ship_name_2" class="col-sm-2 control-label" style="color: white">Pirate Ship 2 Name</label>
+          <div class="col-sm-10">
+            <input type="text" name="pirate[ships][][name]" id="ship_name_2" class="form-control" placeholder="enter pirate ship 2 name here...">
+          </div>
+        </div>
+
+        <br>
+
+        <!-- pirate ship 2 type -->
+        <div class="form-group">
+          <label for="ship_type_2" class="col-sm-2 control-label" style="color: white">Pirate Ship 2 Type</label>
+          <div class="col-sm-10">
+              <input type="text" name="pirate[ships][][type]" id="ship_type_2" class="form-control" placeholder="enter pirate ship 2 type here...">
+          </div>
+        </div>
+
+        <br>
+
+        <!-- pirate ship 2 booty -->
+        <div class="form-group">
+          <label for="ship_booty_2" class="col-sm-2 control-label" style="color: white">Pirate Ship 2 Booty</label>
+          <div class="col-sm-10">
+            <input type="text" name="pirate[ships][][booty]" id="ship_booty_2" class="form-control" placeholder="enter pirate ship 2 booty here...">
+          </div>
+        </div>
+
+        <br>
+
+        <div class="form-group">
+          <div class="col-sm-offset-2 col-sm-10">
+            <button type="submit" class="btn btn-default">Submit</button>
+          </div>
+        </div>
+      </form>
+    </div>
+
+  </body>
+</html>
