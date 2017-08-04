@@ -1,0 +1,26 @@
+<h1>Display your Pirate here</h1>
+
+<%="Name: #{params["pirate"]["name"]}"%>
+<br>
+<%="Height: #{params["pirate"]["height"]}"%>
+<br>
+<%="Weight: #{params["pirate"]["weight"]}"%>
+<br>
+
+<%#binding.pry%>
+<h2>Display your first ship here</h2>
+<%="Name: #{params["pirate"]["ships"][0]["name"]}\n\n"%>
+<br>
+<%="Type: #{params["pirate"]["ships"][0]["type"]}\n\n"%>
+<br>
+<%="Booty: #{params["pirate"]["ships"][0]["booty"]}\n\n"%>
+<br>
+
+<h2>Display your second ship here</h2>
+<%="Name: #{params["pirate"]["ships"][1]["name"]}\n\n"%>
+<br>
+<%="Type: #{params["pirate"]["ships"][1]["type"]}\n\n"%>
+<br>
+<%="Booty: #{params["pirate"]["ships"][1]["booty"]}\n\n"%>
+<br>
+
