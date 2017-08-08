@@ -51,19 +51,19 @@ describe "FormsLab::App" do
     before do
       post '/pirates', {
         "pirate"=> {
-          "name"=>"Ian",
-          "weight"=>"165",
-          "height"=>"95",
-          "ships"=> [
+          :name=>"Ian",
+          :weight=>"165",
+          :height=>"95",
+          :ships=> [
             {
-              "name"=>"Titanic",
-              "type"=>"Steam Liner",
-              "booty"=>"Silver"
+              :name=>"Titanic",
+              :type=>"Steam Liner",
+              :booty=>"Silver"
             },
             {
-              "name"=> "Carpathia",
-              "type"=>"Rescue Ship",
-              "booty"=>"Inner Tubes"
+              :name=> "Carpathia",
+              :type=>"Rescue Ship",
+              :booty=>"Inner Tubes"
             }
           ]
         }

@@ -1,7 +1,13 @@
-<h1>Display your Pirate here</h1>
+<h1>
+	<%= @pirate_info.name %>
+	<%= @pirate_info.weight %>
+	<%= @pirate_info.height %>
+</h1>
 
-
-<h2>Display your first ship here</h2>
-
-
-<h2>Display your second ship here</h2>
+		<p id="ship_name_1"><%= @pirate_info.ships[0].name %></p>
+		<p id="ship_type_1"><%= @pirate_info.ships[0].type %></p>
+		<p id="ship_booty_1"><%= @pirate_info.ships[0].booty %></p>
+		<p id="ship_name_2"><%= @pirate_info.ships[1].name %></p>
+		<p id="ship_type_2"><%= @pirate_info.ships[1].type %></p>
+		<p id="ship_booty_2"><%= @pirate_info.ships[1].booty %></p>
+	
