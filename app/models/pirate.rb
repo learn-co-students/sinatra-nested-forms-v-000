@@ -1,13 +1,15 @@
 class Pirate
 
-  attr_accessor :name, :weight, :height
+  attr_accessor :name, :weight, :height, :ships
 
   PIRATES = []
 
-  def initialize(params)
-    @name = params[:name]
-    @weight = params[:weight]
-    @heigth = params[:heigth]
+  def initialize(pirate)
+    @name = pirate[:name]
+    @weight = pirate[:weight]
+    @height = pirate[:height]
+
+    @ships = pirate[:ships].map { |ship| Ship.new(ship) }
 
     PIRATES << self
   end

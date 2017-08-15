@@ -1,3 +1,4 @@
+require 'pry'
 require './environment'
 
 module FormsLab
@@ -13,13 +14,10 @@ module FormsLab
     end
 
     post '/pirates' do
-      binding.pry
-      @pirate = Pirate.new(params)
-      @ship_1 = Ship.new(params)
-      @ship_2 = Ship.new(params)
+      Pirate.new(params[:pirate])
+      @pirates = Pirate.all
       erb :'pirates/show'
     end
-
 
   end
 end
