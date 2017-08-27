@@ -7,7 +7,7 @@ module FormsLab
     end
 
     get '/new' do # route is a GET request to '/new'
-      erb :"/pirates/new" # renders the views/pirates/new.erb view file, which contains code to create the form
+      erb :'pirates/new' # renders the views/pirates/new.erb view file, which contains code to create the form
     end # So, when user goes to localhost:9393/new in browser, they will see the form to fill out and submit
 
     post '/pirates' do
@@ -17,10 +17,10 @@ module FormsLab
       params[:pirate][:ships].each do |ship_hash|  # iterate through the array of hashes
         Ship.new(ship_hash) # for each hash element in the array (which contains info for a single ship), instantiate a ship instance, passing in the hash as argument of #new.
       end
-
       @ships = Ship.all # call class method #all on Ship class to return the array of all ship instances, stored in @ships instance variable (to pass to the view file show.erb)
 
-      erb :"/pirates/show" # render the views/pirates/show.erb view file, which will process the form, displaying data about the pirate and his ships in browser
+      erb :'pirates/show' # render the views/pirates/show.erb view file, which will process the form, displaying data about the pirate and his ships in browser
     end
+    
   end
 end
