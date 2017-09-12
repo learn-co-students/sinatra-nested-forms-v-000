@@ -1,2 +1,19 @@
 class Ship
+  SHIPS = []
+  attr_reader :name, :type, :booty
+
+  def initialize(attributes)
+    @name = attributes[:name]
+    @type = attributes[:type]
+    @booty = attributes[:booty]
+    SHIPS << self
+  end
+
+  def self.all
+    SHIPS
+  end
+
+  def self.clear
+    SHIPS.clear
+  end
 end
