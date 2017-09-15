@@ -1,6 +1,14 @@
 <h1>Nested Pirates</h1>
 
 <form method="post" action="/pirates">
-  Pirate Name: <input type="text" name="pirate[name]"
-
+  Pirate Name: <input type="text" name="pirate[name]">
+  Pirate Weight: <input type="text" name="pirate[weight]">
+  Pirate Height: <input type="text" name="pirate[height]">
+  Ship Name: <input id="ship_name_1" type="text" name="pirate[ships][][name]">
+  Ship Type: <input id="ship_type_1" type="text" name="pirate[ships][][type]">
+  Ship Booty: <input id="ship_booty_1" type="text" name="pirate[ships][][booty]">
+  Ship Name: <input id="ship_name_2" type="text" name="pirate[ships][][name]">
+  Ship Type: <input id="ship_type_2" type="text" name="pirate[ships][][type]">
+  Ship Booty: <input id="ship_booty_2" type="text" name="pirate[ships][][booty]">
+  <button type="submit" value="submit">Submit</button>
 </form>
