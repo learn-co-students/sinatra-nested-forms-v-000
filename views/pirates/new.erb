@@ -1,1 +1,31 @@
-<h1>Make your form here</h1>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Add A New Priate And Their Ships Here! Arg!!!</title>
+  <head>
+
+  <body>
+    <!-- <h1>Make your form here</h1> -->
+    <form method='POST' action='/pirates'>
+      <p>Pirate Name: <input type='text' name='pirate[name]'></p>
+      <p>Pirate Weight: <input type='text' name='pirate[weight]'></p>
+      <p>Pirate Height: <input type='text' name='pirate[height]'></p>
+      </br>
+      <p>Ship One Name: <input type='text' name=pirate[ships][][name]
+                        id="ship_name_1"></p>
+      <p>Ship One Type: <input type='text' name=pirate[ships][][type]
+                        id="ship_type_1"></p>
+      <p>Ship One Booty: <input type='text' name=pirate[ships][][booty]
+                        id="ship_booty_1"></p>
+      </br>
+      <p>Ship Two Name: <input type='text' name=pirate[ships][][name]
+                        id="ship_name_2"></p>
+      <p>Ship Two Type: <input type='text' name=pirate[ships][][type]
+                        id="ship_type_2"></p>
+      <p>Ship Two Booty: <input type='text' name=pirate[ships][][booty]
+                        id="ship_booty_2"></p>
+      </br>
+      <button type='submit' value='submit'>Submit</button>
+    </form>
+  </body>
+</html>
