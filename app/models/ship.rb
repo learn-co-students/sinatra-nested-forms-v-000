@@ -3,8 +3,8 @@ class Ship
 
   @@ships = []
 
-  def initialize(name, type, booty)
-    @name, @type, @booty = name, type, booty
+  def initialize(args)
+    @name, @type, @booty = args[:name], args[:type], args[:booty]
     @@ships << self
   end
 
