@@ -1,6 +1,6 @@
 context "Filling in the Form" do
   before do
-    visit "/new"
+    visit "/pirates/new"
   end
 
   it "can fill in forms for a pirate and two ships" do

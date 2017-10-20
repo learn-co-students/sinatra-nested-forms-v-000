@@ -1,1 +1,39 @@
-<h1>Make your form here</h1>
+<h1>Pirates and their Ships</h1>
+<form action='/pirates/show' method="POST">
+    <fieldset>
+      <li>
+        <label>Pirate Name</label>
+        <input ... name="pirate[name]"/></li>
+      <li>
+        <label>Pirate Weight</label>
+        <input ... name="pirate[weight]" />
+      </li>
+      <li>
+        <label>Pirate Height</label>
+        <input ... name="pirate[height]" />
+      </li>
+      <li>
+        <label>Pirate First Ship Name</label>
+        <input ... id="ship_name_1" name="pirate[ships][][name]"/></li>
+      <li>
+        <label>Pirate First Ship Type</label>
+        <input ... id="ship_type_1" name="pirate[ships][][type]" />
+      </li>
+      <li>
+        <label>Pirate First Ship Booty</label>
+        <input ... id="ship_booty_1" name="pirate[ships][][booty]" />
+      </li>
+      <li>
+        <label>Pirate Second Ship Name</label>
+        <input ... id="ship_name_2" name="pirate[ships][][name]"/></li>
+      <li>
+        <label>Pirate Second Ship Type</label>
+        <input ... id="ship_type_2" name="pirate[ships][][type]" />
+      </li>
+      <li>
+        <label>Pirate Second Ship Booty</label>
+        <input ... id="ship_booty_2" name="pirate[ships][][booty]" />
+      </li>
+    </fieldset>
+  <input value="Submit" type="submit"/>
+</form>

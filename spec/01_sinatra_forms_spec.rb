@@ -14,9 +14,9 @@ describe "FormsLab::App" do
     end
   end
 
-  describe "GET '/new'" do
+  describe "GET '/pirates/new'" do
     before(:each) do
-      get '/new'
+      get '/pirates/new'
     end
 
     it "returns a 200 status code" do
@@ -47,9 +47,9 @@ describe "FormsLab::App" do
     end
   end
 
-  describe "POST '/pirates'" do
+  describe "POST '/pirates/show'" do
     before do
-      post '/pirates', {
+      post '/pirates/show', {
         "pirate"=> {
           "name"=>"Ian",
           "weight"=>"165",
