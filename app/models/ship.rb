@@ -7,15 +7,15 @@ class Ship
     @name = name
     @type = type
     @booty = booty
-    @@all << self
+    @@ships << self
   end
 
   def self.all
-    @@all
+    @@ships
   end
 
   def self.clear
-    @@all = []
+    @@ships = []
   end
 
 
