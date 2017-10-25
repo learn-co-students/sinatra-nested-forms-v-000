@@ -9,15 +9,19 @@
   <h2>Pirate Weight: <%= @pirate.weight %></h2>
   <h2>Pirate Height: <%= @pirate.height %></h2>
 
-  <h2>Display your first ship here</h2>
-  <h2>Ship Name: <%= @ships[0].name %></h2>
-  <h2>Ship Type: <%= @ships[0].type %></h2>
-  <h2>Ship Booty: <%= @ships[0].booty %></h2>
+  <h2>Ships</h2>
+  <ul>
+    <% @pirate.ships.each_with_index do |ship, index| %>
+    
+      <li><%= ship.id %>.</li>  
+      <ul>
+        <li>Ship Name: <%= ship.name %></li>
+        <li>Ship Category: <%= ship.category %></li>
+        <li>Ship Booty: <%= ship.booty %></li>
+      </ul>  
+      <% end %>
+  </ul>  
 
-  <h2>Display your second ship here</h2>
-  <h2>Ship Name: <%= @ships[1].name %></h2>
-  <h2>Ship Type: <%= @ships[1].type %></h2>
-  <h2>Ship Booty: <%= @ships[1].booty %></h2>
 
 </body>
 </html>

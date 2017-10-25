@@ -1,19 +1,6 @@
 class Pirate < ActiveRecord::Base
   has_many :ships
-  attr_accessor :name, :weight, :height
 
-  PIRATES = []
 
-  def initialize(params)
-    @name = params["pirate"][:name]
-    @weight = params["pirate"][:weight]
-    @height = params["pirate"][:height]
+end  #  End of Class 
 
-    PIRATES << self
-  end
-
-  def self.all
-    PIRATES
-  end
-
-end  #  End of Class

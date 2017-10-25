@@ -20,7 +20,7 @@ ActiveRecord::Schema.define(version: 20171023225124) do
 
   create_table "ships", force: :cascade do |t|
     t.string "name"
-    t.string "type"
+    t.string "category"
     t.string "booty"
     t.integer "pirate_id"
   end

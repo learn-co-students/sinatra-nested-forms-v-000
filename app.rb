@@ -1,4 +1,4 @@
-require './environment'
+require './config/environment'
 
 module FormsLab
   class App < Sinatra::Base
@@ -7,19 +7,30 @@ module FormsLab
       erb :root
     end 
 
-    get '/new' do
-      erb :"pirates/new"
+    get '/pirates' do
+      @pirates = Pirate.all
+      erb :'pirates/index'
+    end  
+    
+    get '/pirates/new' do
+      erb :'pirates/new'
     end
-     
+
+    get '/pirates/:id' do
+      @pirate = Pirate.find(params[:id])
+      erb :'pirates/show'
+    end  
+
     post '/pirates' do
-      @pirate = Pirate.new(params)
-        # binding.pry
-      params["pirate"]["ships"].each do |ship|
-        Ship.new(ship)
+      pirate = Pirate.new(name: params[:pirate][:name], height: params[:pirate][:height], weight: params[:pirate][:weight])
+      params[:pirate][:ships].each do |ship|
+        ship = Ship.new(ship)
+        ship.pirate = pirate
+        ship.save
       end
-      @ships = Ship.all
-      erb :"pirates/show"
+      redirect to "/pirates/#{pirate.id}"
     end
+   
 
   end  #  End of Class
 end  #  End of Module
