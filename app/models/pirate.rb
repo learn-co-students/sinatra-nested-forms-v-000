@@ -2,16 +2,18 @@
 # Pirates should have a name, weight, and height.
 # You will also need a class method that returns all the pirates.
 class Pirate
-  attr_accessor :name, :weight, :height
-  @@all = []
+  attr_reader :name, :weight, :height
 
-  def initialize(name, weight, height)
-    @name = name
-    @weight = weight
-    @height = height
+  PIRATES = []
+
+  def initialize(params)
+    @name = params[:name]
+    @weight = params[:weight]
+    @height = params[:height]
+    PIRATES << self
   end
 
   def self.all
-    @@all
+    PIRATES
   end
 end
