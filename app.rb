@@ -1,17 +1,19 @@
 require './environment'
+require_relative 'app/models/pirate'
+require_relative 'app/models/ship'
 
 module FormsLab
   class App < Sinatra::Base
 
     get '/' do
-      erb :index
+      erb :root
     end
 
     get '/new' do
-      erb :new
+      erb :'/pirates/new'
     end
 
-    post '/pirate' do
+    post '/pirates' do
       @pirate = Pirate.new(params[:pirate])
 
       params[:pirate][:ships].each do |details|
@@ -20,7 +22,7 @@ module FormsLab
 
       @ships = Ship.all
 
-      erb :show
+      erb :'pirates/show'
     end
 
   end

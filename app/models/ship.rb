@@ -15,6 +15,6 @@ class Ship
   end
 
   def self.clear
-    SHIPS.reset
+    SHIPS.clear
   end
 end
