@@ -1,7 +1,19 @@
-<h1>Display your Pirate here</h1>
+<h1>Pirate Name:</h1>
+<p><%=@pirate[:name]%></p>
+<h1>Pirate Height:</h1>
+<p><%=@pirate[:height]%></p>
+<h1>Pirate Weight:</h1>
+<p><%=@pirate[:weight]%></p>
 
 
-<h2>Display your first ship here</h2>
 
 
-<h2>Display your second ship here</h2>
+<%@ships.each do |ship|%>
+<h2>Ship Name:</h2>
+  <p><%=ship[:name]%></p>
+  <h2> Ship Type:</h2>
+  <p><%=ship[:type]%></p>
+  <h2> Ship Booty:</h2>
+  <p><%=ship[:booty]%></p>
+
+<%end%>
