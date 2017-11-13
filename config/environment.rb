@@ -9,4 +9,4 @@ ActiveRecord::Base.establish_connection(
 )
 
 require './app'
-require_all 'models'
+require_all 'app/models'
