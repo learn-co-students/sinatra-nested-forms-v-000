@@ -1,7 +1,4 @@
-class Ship < ActiveRecord::Base
-
-  belongs_to :pirate
-
+class Ship
   attr_accessor :name, :type, :booty
 
   @@all = []
