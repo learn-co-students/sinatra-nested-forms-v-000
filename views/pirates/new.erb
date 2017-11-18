@@ -1,1 +1,52 @@
-<h1>Make your form here</h1>
+
+
+<h2>Pirate</h2>
+<form action="/pirates" method="POST">
+	
+
+	<label>Pirate Name: </label>
+	<input type="text" name="pirate[name]"><br>
+
+	<label>Pirate Weight</label>
+	<input type="text" name="pirate[weight]"><br>	
+
+	<label>Pirate Height</label>
+	<input type="text" name="pirate[height]"><br>		
+
+<h2>Ships</h2>
+	<label>Ship Name 1</label>
+	<input type="text" name="pirate[ships][][name]"><br>	
+		
+	<label>Ship Type</label>
+	<input type="text" name="pirate[ships][][type]"><br>	
+
+	<label>Ship Booty</label>
+	<input type="text" name="pirate[ships][][booty]"><br>	
+	
+	<label>Ship Name 2</label>
+	<input type="text" name="pirate[ships][][name]"><br>	
+		
+	<label>Ship Type</label>
+	<input type="text" name="pirate[ships][][type]"><br>	
+
+	<label>Ship Booty</label>
+	<input type="text" name="pirate[ships][][booty]"><br>
+
+	<input type="submit">
+
+</form>
+
+
+
+<!-- 
+
+change to: 
+<form action="/student" method="post">
+  Student Name: <input type="text" name="student[name]">
+  Student Grade: <input type="text" name="student[grade]">
+  Course Name: <input type="text" name="student[courses][][name]">
+  Course Topic: <input type="text" name="student[courses][][topic]">
+  Course Name: <input type="text" name="student[courses][][name]">
+  Course Topic: <input type="text" name="student[courses][][topic]">
+  <input type="submit">
+</form> -->
