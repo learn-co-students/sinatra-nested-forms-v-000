@@ -83,6 +83,7 @@ PLATFORMS
 DEPENDENCIES
   capybara
   pry
+  rack
   rack-test
   require_all
   rspec
@@ -92,4 +93,4 @@ DEPENDENCIES
   tux
 
 BUNDLED WITH
-   1.10.6
+   1.16.0
