@@ -1,1 +1,62 @@
-<h1>Make your form here</h1>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Form</title>
+  </head>
+  <body>
+    <h1>Make Your Form Here</h1>
+
+    <form action="/pirates" method="post">
+      <label for="pirate[name]">Pirate's Name: </label>
+      <input id="pirate[name]" type="text" name="pirate[name]" value=""><br>
+
+      <label for="pirate[weight]">Pirate's Weight: </label>
+      <input id="pirate[weight]" type="text" name="pirate[weight]" value=""><br>
+
+      <label for="pirate[height]">Pirate's Height: </label>
+      <input id="pirate[height]" type="text" name="pirate[height]" value=""><br>
+
+      <label for="pirate[ships][][name]">Ship Name: </label>
+      <input id="ship_name_1" type="text" name="pirate[ships][][name]" value=""><br>
+
+      <label for="pirate[ships][][type]">Ship Type: </label>
+      <input id="ship_type_1" type="text" name="pirate[ships][][type]" value=""><br>
+
+      <label for="pirate[ships][][booty]">Ship Booty: </label>
+      <input id="ship_booty_1" type="text" name="pirate[ships][][booty]" value=""><br>
+
+      <label for="pirate[ships][][name]">Ship 2 Name: </label>
+      <input id="ship_name_2" type="text" name="pirate[ships][][name]" value=""><br>
+
+      <label for="pirate[ships][][type]">Ship 2 Type: </label>
+      <input id="ship_type_2" type="text" name="pirate[ships][][type]" value=""><br>
+
+      <label for="pirate[ships][][booty]">Ship 2 Booty: </label>
+      <input id="ship_booty_2" type="text" name="pirate[ships][][booty]" value=""><br>
+
+      <input type="submit" name="Submit" id="Submit">
+    </form>
+
+    <!name here must be in the params hash as params[:pirate].
+    so params[:pirate] should be a hash with keys of pirate_name, pirate_weight, and pirate_height>
+<!
+    {pirate_name
+    pirate_weight
+    pirate_height}
+
+      {ship_name_1
+      ship_type_1
+      ship_booty_1}
+
+      {ship_name_2
+      ship_type_2
+      ship_booty_2}
+
+      example
+      <input id="ship_name_1" type="text" name="pirate[ships][][name]"
+
+      we want both #initialize's to take a hash >
+
+  </body>
+</html>
