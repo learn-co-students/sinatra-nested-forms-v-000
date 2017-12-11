@@ -1,6 +1,6 @@
 <h1>Hello <%= @pirate.name %>.  Your looking rather large at <%= @pirate.weight %>lbs. Especially when you are <%= @pirate.height %> feet tall!</h1>
 
-<% @ships.each do |ship| %>
+<% @ships.each do |ship| %>    <!-- take the instance variable from our controller which is an array and iterate over that -->
       <p> Ship Name: <%=ship.name %></p>
       <p> Ship Type: <%=ship.type %></p>
       <p> Ship Booty:<%=ship.booty %></p>

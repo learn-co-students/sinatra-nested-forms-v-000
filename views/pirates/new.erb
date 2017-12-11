@@ -4,7 +4,7 @@
   <p>Pirate Weight: <input type="text" name="pirate[weight]"></p>
   <p>Pirate Height: <input type="text" name="pirate[height]"></p>
   <p> Ship Name: <input id="ship_name_1" type="text" name="pirate[ships][][name]"></p>
-  <!--  -->
+  <!-- the empty array allows us to have many ships   -->
   <p> Ship Type: <input id="ship_type_1" type="text" name="pirate[ships][][type]"></p>
   <p> Ship Booty: <input id="ship_booty_1" type="text" name="pirate[ships][][booty]"></p>
   <p> Ship Name: <input id="ship_name_2" type="text" name="pirate[ships][][name]"></p>
@@ -13,33 +13,3 @@
   <p><button type="submit" value="submit">Submit</p>
     <!-- can also be written <p> <input type="submit"> </p>-->
 </form>
-
-
-
-<!--
-<form action="/student" method="post">
-  Student Name: <input type="text" name="student[name]">
-  Student Grade: <input type="text" name="student[grade]">
-  Course Name: <input type="text" name="student[courses][][name]">
-  Course Topic: <input type="text" name="student[courses][][topic]">
-  Course Name: <input type="text" name="student[courses][][name]">
-  Course Topic: <input type="text" name="student[courses][][topic]">
-  <input type="submit">
-</form>
-
-
-
-my_hash = {}
-my_hash["student"] = {}
-my_hash["student"]["name"] = "Joe"
-my_hash["student"]["courses"] = []
-my_hash["student"]["courses"][0] = { "name" => "AP US History", "topic" => "History"}
-my_hash["student"]["courses"][1] = { "name" => "AP Human Geography", "topic" => "History"}
-To access the name of the first course, you would do something like:
-my_hash["student"]["courses"][0]["name"]
-=> "AP US History"
-
-
-Make a nested form (this should probably have html <label>s so it makes sense to a user). This form will be creating three objects (one instance of the Pirate class, and two instances of the Ship class). Remember, you'll need to build a corresponding controller action to load this page. Your form should POST to the route '/pirates'.
-
--->
