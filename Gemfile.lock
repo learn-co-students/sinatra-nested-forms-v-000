@@ -168,6 +168,7 @@ DEPENDENCIES
   learn-co
   pry
   rack-test
+  rake
   require_all
   rspec
   shotgun
