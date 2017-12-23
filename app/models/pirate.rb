@@ -8,3 +8,4 @@ PIRATES = []
     @height = params[:height]
     PIRATES << self
 end
+end

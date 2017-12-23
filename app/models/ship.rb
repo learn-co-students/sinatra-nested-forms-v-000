@@ -5,7 +5,15 @@ SHIP = []
   def initialize(params)
     @name = params[:name]
     @type = params[:type]
-    @height = params[:booty]
+    @booty = params[:booty]
     SHIP << self
+end
+
+def self.all
+  SHIP
+end
+
+def self.clear
+  SHIP.clear
 end
 end
