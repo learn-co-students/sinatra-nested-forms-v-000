@@ -14,7 +14,8 @@ module FormsLab
       erb :'privateers/new'
     end
 
-    post '/privateers/show' do
+    post '/privateers' do
+      @pirate = Privateer.new(params[:privateer])
       erb :'privateers/show'
     end
 
