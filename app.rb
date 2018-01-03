@@ -15,7 +15,7 @@ module FormsLab
     end
 
     post '/privateers' do
-      @pirate = Privateer.new(params[:privateer])
+      @privateer = Privateer.new(params[:privateer])
       erb :'privateers/show'
     end
 
@@ -28,7 +28,7 @@ module FormsLab
       @ships = Ship.all
 
       erb :'pirates/show'
-      raise params.inspect
+#     raise params.inspect
     end
 
   end
