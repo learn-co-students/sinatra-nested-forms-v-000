@@ -1,4 +1,4 @@
-require './environment'
+require './config/environment'
 
 module FormsLab
   class App < Sinatra::Base
