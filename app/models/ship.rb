@@ -1,5 +1,5 @@
 class Ship < ActiveRecord::Base
-  belongs_to :pirates
+  belongs_to :pirate
   attr_reader :name, :type, :booty
 
   @@ships = []
