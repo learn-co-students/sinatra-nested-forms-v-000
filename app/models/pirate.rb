@@ -1,4 +1,7 @@
-class Pirate
+require './config/environment' #figure out why this doesn't work without this
+
+class Pirate < ActiveRecord::Base
+  has_many :ships
   attr_reader :name, :height, :weight
 
   @@pirates = []
