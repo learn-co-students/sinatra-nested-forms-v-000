@@ -15,7 +15,7 @@ class ApplicationController < Sinatra::Base
   end
 
   get '/pirates/:id' do
-    @pirate = Pirate.find(params[:id])}
+    @pirate = Pirate.find(params[:id])
     erb :'pirate'
   end
 end
