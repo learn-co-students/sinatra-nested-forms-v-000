@@ -1,0 +1,11 @@
+<h1>Pirates</h1>
+
+
+  <% @pirates.each do |pirate| %>
+    <em><h2><%= pirate.name %></h2></em>
+    <ul>
+      <li><%= pirate.weight %></li>
+      <li><%= pirate.height %></li>
+    </ul>
+    <br>
+  <% end %>
