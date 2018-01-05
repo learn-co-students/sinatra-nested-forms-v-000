@@ -1,3 +1,8 @@
+
+<% if @pirate.id == nil %>
+<%= "Pirate cannot be found" %>
+<% else %>
 <h1>Hello there <%= @pirate.name %></h1>
 
 <h3>Your height is: <%= @pirate.height %></h3>
+<% end %>
