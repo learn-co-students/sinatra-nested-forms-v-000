@@ -9,13 +9,10 @@
 <h1>Ships</h1>
 
 <div class="ships">
-<% counter = 0 
-    while counter > 0
-    @ships.each do |ship| %>
+<% @ships.each do |ship| %>
   <div class="ship">
   <h2>Name: <%= ship.name %></h2><br>
     <p>Type: <%= ship.type %></p><br>
     <p>Booty: <%= ship.booty %></p>
   </div><br>
-  <% counter+=1 %>
 <% end %>
