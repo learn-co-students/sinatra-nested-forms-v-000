@@ -1,3 +1,3 @@
 class Ship < ActiveRecord::Base
-  belongs_to :pirates
+  belongs_to :pirate
 end
