@@ -7,20 +7,34 @@ module FormsLab
       erb :root
     end
 
-    get '/new' do
+    get '/pirates/new' do
       erb :'pirates/new'
     end
 
+    get '/pirates' do
+      @pirates = Pirate.all
+
+      erb :'pirates/index'
+    end
+
+    get '/pirates/:id' do
+      @pirate = Pirate.find(params[:id])
+
+      erb :'pirates/show'
+    end
+
     post '/pirates' do
-      @pirate = Pirate.new(params[:pirate])
+      pirate = Pirate.new(name: params[:pirate][:name], weight: params[:pirate][:weight], height: params[:pirate][:height])
 
       params[:pirate][:ships].each do |details|
-        Ship.new(details)
+        ship = Ship.new(details)
+        ship.pirate = pirate
+        ship.save
       end
 
       @ships = Ship.all
 
-      erb :'pirates/show'
+      redirect to "/pirates/#{pirate.id}"
     end
 
   end
