@@ -1,1 +1,24 @@
 <h1>Make your form here</h1>
+<form action="/pirates" method="POST">
+    <h1>Pirates!</h1>
+
+    <h2>Pirate Info</h2>
+    <% ["name", "weight", "height"].each do |pirate_attr| %>
+        <p>
+            <label for="pirate_<%= pirate_attr %>"><%= pirate_attr.capitalize %>:</label>
+            <input type="text" name="pirate[<%= pirate_attr %>]" id="pirate_<%= pirate_attr %>" />
+        </p>
+    <% end %>
+
+    <h2>Ship Info</h2>
+    <% 2.times.with_index(1) do |n, index| %>
+        <h4>Ship <%= index %></h4>
+
+        <% ["name", "type", "booty"].each do |ship_attr| %>
+            <p>
+                <label for="ship_<%= index %>_<%= ship_attr %>"><%= ship_attr.capitalize %>:</label>
+                <input type="text" name="pirate[ships][][<%= ship_attr %>]" id="ship_<%= index %>_<%= ship_attr %>" />
+            </p>
+        <% end %>
+    <% end %>
+</form>
