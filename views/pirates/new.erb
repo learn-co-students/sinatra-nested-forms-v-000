@@ -16,11 +16,11 @@
 
         <% ["name", "type", "booty"].each do |ship_attr| %>
             <p>
-                <label for="ship_<%= index %>_<%= ship_attr %>"><%= ship_attr.capitalize %>:</label>
-                <input type="text" name="pirate[ships][][<%= ship_attr %>]" id="ship_<%= index %>_<%= ship_attr %>" />
+                <label for="ship_<%= ship_attr %>_<%= index %>"><%= ship_attr.capitalize %>:</label>
+                <input type="text" name="pirate[ships][][<%= ship_attr %>]" id="ship_<%= ship_attr %>_<%= index %>" />
             </p>
         <% end %>
     <% end %>
 
-    <input type="submit" id="submit" />
+    <input type="submit" id="Submit" />
 </form>
