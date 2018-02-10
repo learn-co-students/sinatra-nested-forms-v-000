@@ -4,7 +4,10 @@ class Pirate
 
   attr_accessor :name, :weight, :height
 
-  def initialize
+  def initialize(args)
+    args.each do |key, value|
+      self.send("#{key}=", value)
+    end
   end
 
   def self.all
