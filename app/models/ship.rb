@@ -7,6 +7,7 @@ class Ship
   def initialize(args)
     args.each do |key, value|
       self.send("#{key}=", value)
+      @@ships << self
     end
   end
 
