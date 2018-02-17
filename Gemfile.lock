@@ -3,6 +3,7 @@ GEM
   specs:
     addressable (2.5.2)
       public_suffix (>= 2.0.2, < 4.0)
+    apm (0.0.1)
     backports (3.11.0)
     bond (0.5.1)
     capybara (2.17.0)
@@ -81,6 +82,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  apm
   capybara
   pry
   rack-test
