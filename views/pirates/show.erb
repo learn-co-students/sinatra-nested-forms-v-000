@@ -1,9 +1,11 @@
-<h1><%= @pirate.name %>: <%= @pirate.weight %> - <%= @pirate.height %></h1>
-
+<%= @pirate.name %>
 
 <h2>Ships</h2>
-  <% @ships.each do |ship| %>
-    <p><%= ship.name %></p>
-    <p><%= ship.type %></p>
-    <p><%= ship.booty %></p><br>
-  <% end %>
+<ul>
+  <% @pirate.ships.each_with_index do |ship, index|  %>
+    <li> <%= index+1 %> </li>
+    <li> <%= Name: ship.name %> </li>
+    <li> <%= Category: ship.category%> </li>
+    <li> <%= Booty: ship.booty %> </li>
+    <% end %>
+</ul>
