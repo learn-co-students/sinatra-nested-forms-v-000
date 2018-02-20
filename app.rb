@@ -27,6 +27,7 @@ module FormsLab
       ship.save
     end
     #don't need to make an instance variable @pirate since we're not rendering a view
+    #redirect vs. render(erb) if you don't need to access the data anymore
     redirect :"/pirates/#{pirate.id}"
 
     # post '/pirates' do
