@@ -26,8 +26,19 @@ module FormsLab
       ship.pirate = pirate
       ship.save
     end
-    #don't need to make an instance variable @pirate since we're not rendering a view 
-    redirect to :"/pirates/#{pirate.id}"
+    #don't need to make an instance variable @pirate since we're not rendering a view
+    redirect :"/pirates/#{pirate.id}"
+
+    # post '/pirates' do
+    #   @pirate = Pirate.new(params[:pirate])
+    #
+    #   params[:pirate][:ships].each do |details|
+    #     Ship.new(details)
+    #   end
+    #   @ships = Ship.all
+    #
+    #   erb :'pirates/show'
+    end
   end
 
   end
