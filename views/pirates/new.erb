@@ -1,1 +1,25 @@
-<h1>Make your form here</h1>
+<!doctype = HTML>
+<html>
+<header>
+  <title>New Pirate</title>
+</header>
+<body>
+<h1>Welcome to the Nested Forms Lab!</h1>
+<h2>let's navigate to the '/new'</h2>
+<form method = "POST" action= "/pirates">
+<p>Pirate Name: <input type="text" name="pirate[name]"></p>
+<p>Pirate Weight: <input type="text" name="pirate[weight]"></p>
+<p>Pirate Height: <input type="text" name="pirate[height]"></p>
+<br> <h2>First Ship's Information</h2>
+<p>First Ship's Name:<input type="text" id = "ship_name_1" name="pirate[ships][][name]"></p> # changed all of these...
+<p>First Ship's Type:<input type = "text" id = "ship_type_1" name= "pirate[ships][][type]"</p>
+<p>First Ship's Booty:<input type = "text" id= "ship_booty_1" name= "pirate[ships][][booty]"</p>
+<br> <h2>Second Ship's Information</h2>
+<p>Second Ship's Name:<input type="text" id= "ship_name_2" name="pirate[ships][][name]"></p>
+<p>Second Ship's Type:<input type = "text" id= "ship_type_2" name= "pirate[ships][][type]"</p>
+<p>Second Ship's Booty:<input type = "text" id= "ship_booty_2" name= "pirate[ships][][booty]"</p>
+<br>
+<input type="submit" id="Submit" name ="Submit">
+</form>
+</body>
+</html>

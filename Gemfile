@@ -5,6 +5,7 @@ gem 'sinatra-reloader', require: false
 gem 'shotgun'
 gem 'pry'
 gem 'tux'
+gem 'ruby_doc'
 gem 'require_all'
 
 group :test do
