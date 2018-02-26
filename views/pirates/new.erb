@@ -1,1 +1,22 @@
-<h1>Make your form here</h1>
+<form action='/pirates' method="POST">
+  <div class="pirate">
+    <p>Pirate Name  <input class="field" id="pirate_name" type="text" name="pirate[name]" /></p>
+    <p>Weight  <input class="field" id="pirate_weight" type="text" name="pirate[weight]" /></p>
+    <p>Height  <input class="field" id="pirate_height" type="text" name="pirate[height]" /><br></p>
+  </div>
+  
+
+  <div class="ships">
+    <p>Ship 1 Name  <input class="field" id="ship_name_1" type="text" name="pirate[ships][][name]" /></p>
+    <p>Type  <input class="field" id="ship_type_1" type="text" name="pirate[ships][][type]" /></p>
+    <p>Booty  <input class="field" id="ship_booty_1" type="text" name="pirate[ships][][booty]" /></p>
+    
+    <p>Ship 2 Name  <input class="field" id="ship_name_2" type="text" name="pirate[ships][][name]" /></p>
+    <p>Type  <input class="field" id="ship_type_2" type="text" name="pirate[ships][][type]" /></p>
+    <p>Booty  <input class="field" id="ship_booty_2" type="text" name="pirate[ships][][booty]" /></p>
+    
+    <input id="submit" type="submit" value="Submit">
+  </div>
+</form>
+
+<img src="https://vignette.wikia.nocookie.net/battlefieldheroes/images/6/69/Skeleton_Pirate.png/revision/latest?cb=20110215130040"></img>
