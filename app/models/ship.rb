@@ -1,11 +1,9 @@
-require 'pry'
-
 class Ship
   attr_accessor :name, :type, :booty
 
   @@ships = []
 
-  def intialize(details)
+  def initialize(details)
     @name = details[:name]
     @type = details[:type]
     @booty = details[:booty]
@@ -17,6 +15,7 @@ class Ship
   end
 
   def self.clear
-    @@ships.clear
+    @@ships = []
   end
+
 end
