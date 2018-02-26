@@ -3,20 +3,20 @@ require 'pry'
 class Ship
   attr_accessor :name, :type, :booty
 
-  SHIPS = []
+  @@ships = []
 
   def intialize(details)
     @name = details[:name]
     @type = details[:type]
     @booty = details[:booty]
-    SHIPS << self
+    @@ships << self
   end
 
   def self.all
-    SHIPS
+    @@ships
   end
 
   def self.clear
-    SHIPS.clear
+    @@ships.clear
   end
 end
