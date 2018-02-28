@@ -11,9 +11,6 @@ module FormsLab
     get '/new' do
       erb :"pirates/new"
     end
-    # erb :post, :layout => false do
-    #   erb :index
-    # end
 
   end
 end
