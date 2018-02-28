@@ -1,10 +1,10 @@
 
 <form method="POST" action="/pirates">
-  <label for="pirate name">Pirate Name</label>
-  <input type="text" name="pirate[name]"><br>
-  <label for="pirate weight">Pirate Weight</label>
+  <label for="pirate_name">Pirate Name</label>
+  <input type="text" id="pirate_name"name="pirate[name]"><br>
+  <label for="pirate_weight">Pirate Weight</label>
   <input type="text" name="pirate[weight]"><br>
-  <label for="pirate height">Pirate Height</label>
+  <label for="pirate_height">Pirate Height</label>
   <input type="text" name="pirate[height]"><br>
 
   <label for="pirate[ships][][name]">First Ship Name</label>
@@ -21,35 +21,10 @@
   <label for="pirate[ships][][booty]">Second Ship Booty</label>
   <input type="text" name="ship_booty_2"><br>
 
-
-
-  <!-- <input type="text" name="pirate[ships][][name]"><br>
-  <label for="first ship type">First Ship Type</label>
-  <input type="text" name="ship_type_1"><br>
-  <label for="first ship booty">First Ship Booty</label>
-  <input type="text" name="ship_booty_1"><br>
-
-  <label for="second ship name">Second Ship Name</label>
-  <input type="text" name="ship_name_2"><br>
-  <label for="second ship type">Second Ship Type</label>
-  <input type="text" name="ship_type_2"><br>
-  <label for="second ship booty">Second Ship Booty</label>
-  <input type="text" name="ship_booty_2"><br> -->
-
   <input type="submit" value="Submit">
 </form>
 
 
-fill_in("pirate[name]", :with => "Captain Jack Sparrow")
-fill_in("pirate[weight]", :with => "190 lbs")
-fill_in("pirate[height]", :with => "5 feet 11 inches")
-fill_in("ship_name_1", :with => "Flying Dutchman")
-fill_in("ship_type_1", :with => "ghost ship")
-fill_in("ship_booty_1", :with => "gold coins")
-fill_in("ship_name_2", :with => "Black Pearl")
-fill_in("ship_type_2", :with => "merchant vessel")
-fill_in("ship_booty_2", :with => "treasure map")
-click_button('Submit')
 <!--
 Create params:
 {"pirate"=>
