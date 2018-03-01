@@ -17,10 +17,12 @@ module FormsLab
 
       @pirate = Pirate.new(params[:pirate][:name], params[:pirate][:weight],params[:pirate][:height])
       ships = params[:pirate][:ships]
+
       ships.each{|i|
         Ship.new(i[:name], i[:type], i[:booty])
       }
       @ships = Ship.all
+      #binding.pry
       # params[ships].each do
       #
       # end
