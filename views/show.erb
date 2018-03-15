@@ -1,0 +1,5 @@
+<h1><%=@pirate.name%>, <%=@pirate.weight%>, <%=@pirate.height%></h1>
+
+<%@ships.each do |ship|%>
+  <h2><%=ship.name%>, <%=ship.type%>, <%=ship.booty%></h2>
+<%end%>
