@@ -23,8 +23,7 @@ module FormsLab
         @booty = attributes[:booty]
       end
 
-      @ship_1 = Ship.all[0]
-      @ship_2 = Ship.all[1]
+      @ships = Ship.all
 
       erb :show
     end
