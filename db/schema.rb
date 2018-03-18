@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180318055631) do
+ActiveRecord::Schema.define(version: 20180318060609) do
 
   create_table "pirates", force: :cascade do |t|
     t.string "name"
@@ -20,7 +20,7 @@ ActiveRecord::Schema.define(version: 20180318055631) do
 
   create_table "ships", force: :cascade do |t|
     t.string "name"
-    t.string "category"
+    t.string "type"
     t.string "booty"
     t.integer "pirate_id"
   end
