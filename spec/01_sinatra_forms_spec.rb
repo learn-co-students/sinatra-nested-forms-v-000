@@ -74,6 +74,8 @@ describe "FormsLab::App" do
       Ship.clear
     end
 
+  ##    Commented out spec below, as it only passes in-browser. Tests
+  ##    would need to be rewritten to work with ActiveRecord database.
   #  it "returns a 200 status code" do
   #    expect(last_response.status).to eq(200)
   #  end
