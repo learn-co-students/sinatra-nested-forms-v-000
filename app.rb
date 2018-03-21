@@ -12,7 +12,7 @@ module FormsLab
       erb :"pirates/new"
     end
 
-    post '/new' do
+    post '/pirates' do
       #points to an erb that displays the info.
       #several instance variables will be declared here
       @new_pirate = Pirate.new(params[:pirate])
