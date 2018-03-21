@@ -8,7 +8,6 @@ module FormsLab
 
     get '/new' do
       #points to an erb that holds the form
-      "Hello World"
       erb :"pirates/new"
     end
 
