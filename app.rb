@@ -8,7 +8,14 @@ module FormsLab
     end
 
     get '/new' do
-      erb :new
+      erb :choice
+    end
+
+    post '/pirates' do
+
+      @pirate = Pirate.new("#{params[pirate][name]}", "#{params[pirate][weight]}", "#{params[pirate][weight]}")
+      @ship = Ship.new("#{params[pirate][ships][][name]}","#{params[pirate][ships][][type]}", "#{params[pirate][ships][][booty]}")
+      erb :display
     end
 
   end
