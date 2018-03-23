@@ -1,5 +1,9 @@
-<h1>Display your Pirate here</h1>
-
+<h1>Welcome Aboard, Pirate <%= "#{params[pirate][name]}" %>! </h1>
+<ul>
+  <ol>Pirate Name: <%= "#{@pirate.name}" %></ol>
+  <ol>Pirate Weight: <%= "#{@pirate.weight}" %></ol>
+  <ol>Pirate Height: <%= "#{@pirate.height}" %></ol>
+</ul>
 
 <h2>Display your first ship here</h2>
 

@@ -1,3 +1,4 @@
+require 'pry'
 require './environment'
 
 module FormsLab
@@ -13,8 +14,12 @@ module FormsLab
 
     post '/pirates' do
 
-      @pirate = Pirate.new("#{params[pirate][name]}", "#{params[pirate][weight]}", "#{params[pirate][weight]}")
-      @ship = Ship.new("#{params[pirate][ships][][name]}","#{params[pirate][ships][][type]}", "#{params[pirate][ships][][booty]}")
+
+      @pirate = Pirate.new(params[:pirate][:name], params[:pirate][:weight], params[:pirate][:height])
+      @ship1 = Ship.new(params[:pirate][:ships][0][:name], params[:pirate][:ships][0][:type], params[:pirate][:ships][0][:booty])
+      @ship2 = Ship.new(params[:pirate][:ships][1][:name], params[:pirate][:ships][1][:type], params[:pirate][:ships][1][:booty])
+      @ships = Ship.all
+
       erb :display
     end
 

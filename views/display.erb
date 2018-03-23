@@ -1,0 +1,27 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+</head>
+
+<body>
+<h1>Welcome Aboard, Pirate <%= "#{@pirate.name}" %>! </h1>
+
+  <h3>Pirate Name: <%= "#{@pirate.name}" %></h3>
+  <h3>Pirate Weight: <%= "#{@pirate.weight}" %></h3>
+  <h3>Pirate Height: <%= "#{@pirate.height}" %></h3>
+
+
+<h2><%= "#{@pirate.name}"%>'s Ships Include: </h2>
+
+    <p>First Ship's Name: <%= @ship1.name %></p>
+    <p>First Ship's Type: <%= @ship1.type %></p>
+    <p>First Ship's Booty: <%= @ship1.booty %></p>
+
+    <p>Second Ship's Name: <%= @ship2.name %></p>
+    <p>Second Ship's Type: <%= @ship2.type %></p>
+    <p>Second Ship's Booty: <%= @ship2.booty %></p>
+
+</body>
+</html>

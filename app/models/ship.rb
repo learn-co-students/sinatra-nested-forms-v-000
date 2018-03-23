@@ -4,7 +4,7 @@ class Ship
 
   @@ship = []
 
-  def initialize
+  def initialize(name, type=nil, booty=nil)
     @name = name
     @type = type
     @booty = booty
