@@ -4,7 +4,9 @@
   <h3>Height: <%= @pirate.height %> inches</h3>
 
 <h1>Ships</h1>
-<% @ships.each do |ship| %>
+<% @ships.each_with_index do |ship, index| %>
+    <%indexplusone = index + 1%>
+    <h2> Ship #<%=indexplusone %></h3>
     <h3>Ship Name: <%= ship.name %></h3>
     <h3>Ship Type: <%= ship.type %></h3>
     <h3>Ship Booty: <%= ship.booty %></h3>
