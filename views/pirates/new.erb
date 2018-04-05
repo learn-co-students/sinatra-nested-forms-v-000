@@ -1,1 +1,53 @@
-<h1>Make your form here</h1>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <form action="/pirates" method="post">
+      <label for="pirate_name">Pirate Name</label>
+      <p><input type="text" id="pirate[name]" name="pirate[name]" /></p>
+
+      <label for="pirate_weight">Pirate Weight</label>
+      <p><input type="text" id="pirate[weight]" name="pirate[weight]" /></p>
+
+      <label for="pirate_height">Pirate Height</label>
+      <p><input type="text" id="pirate[height]" name="pirate[height]" /></p>
+
+      <label for="ship_name_1">Ship 1 Name</label>
+      <p><input type="text" id="ship_name_1" name="pirate[ships][][name]" /></p>
+
+      <label for="ship_type_1">Ship 1 Type</label>
+      <p><input type="text" id="ship_type_1" name="pirate[ships][][type]" /></p>
+
+      <label for="ship_booty_1">Ship 1 Booty</label>
+      <p><input type="text" id="ship_booty_1" name="pirate[ships][][booty]" /></p>
+
+      <label for="ship_name_2">Ship 2 Name</label>
+      <p><input type="text" id="ship_name_2" name="pirate[ships][][name]" /></p>
+
+      <label for="ship_type_2">Ship 2 Type</label>
+      <p><input type="text" id="ship_type_2" name="pirate[ships][][type]" /></p>
+
+      <label for="ship_booty_2">Ship 2 Booty</label>
+      <p><input type="text" id="ship_booty_2" name="pirate[ships][][booty]" /></p>
+
+      <input type="submit" id="Submit" />
+
+    </form>
+
+
+    <!-- fill_in("pirate[name]", :with => "Captain Jack Sparrow")
+    fill_in("pirate[weight]", :with => "190 lbs")
+    fill_in("pirate[height]", :with => "5 feet 11 inches")
+    fill_in("ship_name_1", :with => "Flying Dutchman")
+    fill_in("ship_type_1", :with => "ghost ship")
+    fill_in("ship_booty_1", :with => "gold coins")
+    fill_in("ship_name_2", :with => "Black Pearl")
+    fill_in("ship_type_2", :with => "merchant vessel")
+    fill_in("ship_booty_2", :with => "treasure map") -->
+
+
+  </body>
+</html>
