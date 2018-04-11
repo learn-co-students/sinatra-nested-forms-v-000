@@ -1,1 +1,22 @@
-<h1>Make your form here</h1>
+Welcome to the Nested Forms Lab!
+let's navigate to the '/new'
+
+<form action="/pirates" method="post">
+  <h1>Make your Pirate here</h1>
+  <p>Name:<input id="pirate[name]" type="text" name="pirate[name]" ></p>
+  <p>Weight:<input id="pirate[weight]" type="text" name="pirate[weight]" ></p>
+  <p>Height:<input id="pirate[height]" type="text" name="pirate[height]" ></p>
+  <h1>Make your first Ship here</h1>
+  <p>Ship Name:<input id="ship_name_1" type="text" name="pirate[ships][][name]" ></p>
+  <p>Ship Type<input id="ship_type_1" type="text" name="pirate[ships][][type]" ></p>
+  <p>Ship's Booty<input id="ship_booty_1" type="text" name="pirate[ships][][booty]" ></p>
+  <h1>Make your second Ship here</h1>
+  <p>Ship Name:<input id="ship_name_2" type="text" name="pirate[ships][][name]" ></p>
+  <p>Ship Type:<input id="ship_type_2" type="text" name="pirate[ships][][type]" ></p>
+  <p>Ship's Booty:<input id="ship_booty_2" type="text" name="pirate[ships][][booty]" ></p>
+  <p><input type="submit" name="submit" id="Submit"></p>
+
+</form>
+
+Pirates should have a name, weight, and height.
+The ship class should have name, type, and booty attributes
