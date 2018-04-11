@@ -2,17 +2,20 @@
 
 <form action="/pirates" method="post">
     <h2>pirates</h2>
-    <input type="text" name="pirate[name]">
-    <input type="text" name="pirate[weight]">
-    <input type="text" name="pirate[height]">
+    <input id="pirate_name"type="text" name="pirate[name]">
+    <input id="pirate_weight"type="text" name="pirate[weight]">
+    <input id="pirate_height"type="text" name="pirate[height]">
 
     <h2>ships</h2>
     <!-- [] indicates that what come after it would be nested -->
-    <input type="text" name="pirate[ships][][name]">
-    <input type="text" name="pirate[ships][][type]">
-    <input type="text" name="pirate[ships][][booty]">
-    <input type="submit" value="submit">
+    <input id="ship_name_1" type="text" name="pirate[ships][][name]">
+    <input id="ship_type_1"type="text" name="pirate[ships][][type]">
+    <input id="ship_booty_1"type="text" name="pirate[ships][][booty]">
 
+    <input id="ship_name_2" type="text" name="pirate[ships][][name]">
+    <input id="ship_type_2"type="text" name="pirate[ships][][type]">
+    <input id="ship_booty_2"type="text" name="pirate[ships][][booty]">
 
+    <input id="Submit" type="submit" value="Submit">
 
 </form>

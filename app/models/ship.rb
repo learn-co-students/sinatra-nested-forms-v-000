@@ -17,14 +17,14 @@ def self.all
 end
 
 
-attr_reader :name, :weight, :height
+attr_reader :name, :type, :booty
 
 PIRATES = []
 
 def initialize(params)
   @name =  params[:name]
-  @weight= params[:weight]
-  @height= params[:height]
+  @type= params[:type]
+  @booty= params[:booty]
  PIRATES << self
 end
 
