@@ -1,1 +1,18 @@
 <h1>Make your form here</h1>
+
+<form action="/pirates" method="post">
+    <h2>pirates</h2>
+    <input type="text" name="pirate[name]">
+    <input type="text" name="pirate[weight]">
+    <input type="text" name="pirate[height]">
+
+    <h2>ships</h2>
+    <!-- [] indicates that what come after it would be nested -->
+    <input type="text" name="pirate[ships][][name]">
+    <input type="text" name="pirate[ships][][type]">
+    <input type="text" name="pirate[ships][][booty]">
+    <input type="submit" value="submit">
+
+
+
+</form>

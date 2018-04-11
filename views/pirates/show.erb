@@ -1,7 +1,15 @@
 <h1>Display your Pirate here</h1>
+ <h1><%=@pirate%></h1>
+ <br>
 
+ <% @ships.each do |ship|%>
+  <div class="ship">
 
 <h2>Display your first ship here</h2>
-
+      <p>Ship_name: <%=ship.name%></p>
+      <br>
+    </div>
 
 <h2>Display your second ship here</h2>
+
+   <%end%>
