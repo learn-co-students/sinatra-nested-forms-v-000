@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html>
   <head>
     <meta charset="UTF-8">
@@ -7,19 +8,19 @@
   <body>
     <h1>Pirates!</h1>
 
-    <form method="POST" action="pirates/show" id="form">
+    <form method="POST" action="/pirates" id="form">
       Pirate Name: <input type="text" name="pirate[name]">
       Pirate Weight: <input type="text" name="pirate[weight]">
-      Pirate Height: <input type="text" name="pirate[height]">
+      Pirate Height: <input type="text" name="pirate[height]"><br>
 
 
-      Name: <input type="text" id="ship_name_1" name="pirate[ships][][name]">
-      Type: <input type="text" id="ship_type_1" name="pirate[ships][][type]">
-      Booty: <input type="text" id="ship_booty_1" name="pirate[ships][][booty]">
-      Name: <input type="text" id="ship_name_2" name="pirate[ships][][name]">
-      Type: <input type="text" id="ship_type_2" name="pirate[ships][][type]">
-      Booty: <input type="text" id="ship_booty_2" name="pirate[ships][][booty]">
-      <input type="submit" id="Submit"></input>
+      First Ship Name: <input type="text" id="ship_name_1" name="pirate[ships][][name]">
+      First Ship Type: <input type="text" id="ship_type_1" name="pirate[ships][][type]">
+      First Ship Booty Type: <input type="text" id="ship_booty_1" name="pirate[ships][][booty]"><br><br>
+      Second Ship Name: <input type="text" id="ship_name_2" name="pirate[ships][][name]">
+      Second Ship Type: <input type="text" id="ship_type_2" name="pirate[ships][][type]">
+      Second Ship Booty Type: <input type="text" id="ship_booty_2" name="pirate[ships][][booty]">
+      <br><input type="submit" id="Submit"></input>
     </form>
 
   </body>
