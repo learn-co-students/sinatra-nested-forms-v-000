@@ -3,7 +3,7 @@ class Ship
 
     ALL = []
 
-  def initialize (name, type, booty)
+  def initialize (name=nil, type=nil, booty=nil)
     @name = name
     @type = type
     @booty = booty
@@ -19,5 +19,5 @@ end
 def self.clear
   ALL.delete!
 end
-  
+
 end

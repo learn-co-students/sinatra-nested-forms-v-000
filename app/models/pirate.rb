@@ -3,7 +3,7 @@ class Pirate
 
       ALL = []
 
-    def initialize (name, height, weight)
+    def initialize (name=nil, height=nil, weight=nil)
       @name = name
       @height = height
       @weight = weight
