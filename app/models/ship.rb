@@ -16,7 +16,7 @@ class Ship
   end
 
   def self.clear
-    ALL.delete!
+    ALL.clear
   end
 
   #returns all the ships and a class method `.clear` that deletes all ships.
