@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Test</title>
+  </head>
+  <body>
+    <h1>Test page</h1>
+
+    <p><%= @hook.name %></p>
+    <p><%= @hook.weight %></p>
+    <p><%= @hook.height %></p>
+    <% @ships.each do |ship| %>
+    <p><%= ship.name %></p>
+    <p><%= ship.type %></p>
+    <p><%= ship.booty %></p>
+    <% end %>
+
+  </body>
+</html>
