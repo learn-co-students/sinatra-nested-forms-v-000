@@ -68,6 +68,7 @@ describe "FormsLab::App" do
           ]
         }
       }
+      # binding.pry
     end
 
     after do
