@@ -3,8 +3,7 @@ class Ship
 
   @@all = []
 
-  def initialize(pirate, name, type, booty)
-    @pirate = pirate
+  def initialize(name, type, booty)
     @name = name
     @booty = booty
     self << @@all
