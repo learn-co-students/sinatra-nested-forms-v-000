@@ -4,7 +4,11 @@ module FormsLab
   class App < Sinatra::Base
 
     get '/' do
-      erb :new
+      erb :root
+    end
+
+    get '/new' do
+      erb :'pirates/new'
     end
 
     post '/pirates' do
@@ -16,7 +20,7 @@ module FormsLab
 
       @ships = Ship.all
 
-      erb :show
+      erb :'pirates/show'
     end
 
   end
