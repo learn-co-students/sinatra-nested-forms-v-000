@@ -1,0 +1,25 @@
+<head>
+
+  <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+  <h1>Make your form here</h1>
+
+<form action="/pirates" method="POST">
+  <h2>Pirate Information</h2>
+  <label name 'pirate[name]'>Pirate Name: </label>
+  <input type="text" name="pirate[name]"></br>
+  <label name 'pirate[weight]'>Pirate Weight: </label>
+  <input type="text" name="pirate[weight]"></br>
+  <label name 'pirate[height]'>Pirate Height: </label>
+  <input type="text" name="pirate[height]">
+
+  </br>
+  <h2>Ship Information</h2>
+  <label name 'pirate[ships][][name]'>Ship Name: </label>
+  <input type="text" name="pirate[ships][][name]"></br>
+  <label name 'pirate[ships][][type]'>Ship Type: </label>
+  <input type="text" name="pirate[ships][][type]"></br>
+  <label name 'pirate[ships][][booty]'>Ship Booty: </label>
+  <input type="text" name="pirate[ships][][booty]"></br>
+  <input type="submit">
+</form>
