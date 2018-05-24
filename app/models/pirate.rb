@@ -1,10 +1,11 @@
 class Pirate
+  attr_accessor :name, :weight, :height, :ships
+
   @@all = []
 
-  def initialize(name, weight, height)
-    @name = name
-    @weight = weight
-    @height = height
+  def initialize(args)
+    # binding.pry
+    args.each { |key, value| self.send("#{key}=", value) }
     @@all << self
   end
 

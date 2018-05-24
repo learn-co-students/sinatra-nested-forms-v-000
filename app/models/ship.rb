@@ -1,10 +1,10 @@
 class Ship
+  attr_accessor :name, :type, :booty
+
     @@all = []
 
-    def initialize(name, type, booty)
-      @name = name
-      @type = type
-      @booty = booty
+    def initialize(args)
+      args.each { |key, value| self.send("#{key}=", value) }
       @@all << self
     end
 
