@@ -1,4 +1,4 @@
-class Ship
+class Ship 
   
   attr_accessor :name, :type, :booty
   
@@ -6,8 +6,8 @@ class Ship
   
   def initialize(args)
     @name = args[:name]
-    @weight = args[:type]
-    @height = args[:booty]
+    @type = args[:type]
+    @booty = args[:booty]
     SHIPS << self 
   end 
   
@@ -19,4 +19,4 @@ class Ship
     SHIPS.clear 
   end 
   
-end
+end 
