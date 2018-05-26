@@ -1,4 +1,4 @@
-class Pirate
+class Pirate 
   
   attr_accessor :name, :weight, :height
   
@@ -19,4 +19,4 @@ class Pirate
     SHIPS.clear 
   end 
   
-end
+end 
