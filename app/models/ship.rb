@@ -1,11 +1,12 @@
 class Ship
+  attr_accessor :name, :type, :booty
 
 @@ships = []
 
-  def initialize(params)
-    @name = params[:pirate][:ship][:name]
-    @type = params[:pirate][:ship][:type]
-    @booty = params[:pirate][:ship][:booty]
+  def initialize(args)
+    @name = args[:name]
+    @type = args[:type]
+    @booty = args[:booty]
     @@ships << self
   end
 
