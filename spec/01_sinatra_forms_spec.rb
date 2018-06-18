@@ -1,4 +1,4 @@
-describe "FormsLab::App" do
+puts describe "FormsLab::App" do
   describe "GET '/'" do
     before(:each) do
       get '/'
@@ -14,7 +14,7 @@ describe "FormsLab::App" do
     end
   end
 
-  describe "GET '/new'" do
+  puts describe "GET '/new'" do
     before(:each) do
       get '/new'
     end
@@ -47,7 +47,7 @@ describe "FormsLab::App" do
     end
   end
 
-  describe "POST '/pirates'" do
+puts  describe "POST '/pirates'" do
     before do
       post '/pirates', {
         "pirate"=> {

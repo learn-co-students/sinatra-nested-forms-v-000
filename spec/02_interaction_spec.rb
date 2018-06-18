@@ -1,4 +1,4 @@
-context "Filling in the Form" do
+puts context "Filling in the Form" do
   before do
     visit "/new"
   end
