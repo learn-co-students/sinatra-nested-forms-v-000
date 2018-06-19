@@ -12,18 +12,20 @@ module FormsLab
        erb :"/pirates/new"
     end
 
-    post '/pirates' do
-      raise params.inspect
-      @pirate = Pirate.new(params[:pirate[name]], params[:pirate[weigth]], params[:pirate[height]])
+    post "/pirates" do
+      @pirate = Pirate.new(params[:pirate][:name],
+                          params[:pirate][:weight],
+                          params[:pirate][:height])
 
-      @ship1 = Ship.new(params[:ship_name_1], params[:ship_type_1], params[:ship_booty_1])
-      @ship1 = Ship.all.first
+      @ship1 = Ship.new(params[:pirate][:ships][0][:name],
+                       params[:pirate][:ships][0][:type],
+                       params[:pirate][:ships][0][:booty])
+      @ship1.save
 
-      @ship2 = Ship.new(params[:ship_name_2], params[:ship_type_2], params[:ship_booty_2])
-      @ship2 = Ship.all.last
-
-      @pirates = Pirate.all
-      @ships = Ship.all
+      @ship2 = Ship.new(params[:pirate][:ships][1][:name],
+                       params[:pirate][:ships][1][:type],
+                       params[:pirate][:ships][1][:booty])
+      @ship2.save
 
       erb :"/pirates/show"
     end

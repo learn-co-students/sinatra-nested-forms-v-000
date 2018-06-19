@@ -6,8 +6,16 @@ class Pirate
     @name = name
     @weight = weight
     @height = height
+    save
+  end
 
+  def self.ships
+    @ships
+  end
+
+  def save
     @@pirate << self
+    @@pirate
   end
 
   def self.all
@@ -15,7 +23,7 @@ class Pirate
   end
 
   def self.clear
-    @@pirate.destroy
+    @@pirate.clear
   end
 
 end
