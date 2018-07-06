@@ -1,1 +1,16 @@
-<h1>Make your form here</h1>
+<h1>Welcome to the Nested Forms Lab!</h1>
+<h2>let's navigate to the '/new'</h2>
+  <form method="post" action="/new">
+    <p>Pirate Name: <input type="text" name="pirate[name]"></p>
+    <p>Pirate Weight: <input type="text" name="pirate[weight]"></p>
+    <p>Pirate Height: <input type="text" name="pirate[height]"></p>
+
+    <p>Ship Name: <input type="text" name="pirate[ships][][name]"></p>
+    <p>Ship Type: <input type="text" name="pirate[ships][][type]"></p>
+    <p>Ship Booty: <input type="text" name="pirate[ships][][booty]"></p>
+
+    <p>Ship Name: <input type="text" name="pirate[ships][][name]"></p>
+    <p>Ship Type: <input type="text" name="pirate[ships][][type]"></p>
+    <p>Ship Booty: <input type="text" name="pirate[ships][][booty]"></p>
+    <input type="submit" name="submit">
+  </form>
