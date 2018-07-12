@@ -1,30 +1,35 @@
-<h1>Make your form here</h1>
-
-<% his form will be creating three objects (one instance of the Pirate class, and two instances of the Ship class %>
+<h2>Create a Pirate and two Ships</h2>
 
 <form action='/show' method='post'>
-  # pirate
+  <% # pirate %>
   <label>Pirate Name:</label>
   <input type='text' name='pirate[name]'>
+  
   <label>Pirate Weight:</label>
   <input type='text' name='pirate[weight]'>
+  
   <label>Pirate Height:</label>
   <input type='text' name='pirate[height]'>
   
-  # ship 1 
-  <label>OOOOOOOOOOOOOO</label>
-  <input type='text' name='XXXXXXXXX'>
-  <label>OOOOOOOOOOOOOO</label>
-  <input type='text' name='XXXXXXXXX'>
-  <label>OOOOOOOOOOOOOO</label>
-  <input type='text' name='XXXXXXXXX'>
+  <% # ship 1 %> 
+  <label>Ship 1 Name:</label>
+  <input type='text' name='pirate[ships][][name]'>
   
-  # ship 2
-  <label>OOOOOOOOOOOOOO</label>
-  <input type='text' name='XXXXXXXXX'>
-  <label>OOOOOOOOOOOOOO</label>
-  <input type='text' name='XXXXXXXXX'>
-  <label>OOOOOOOOOOOOOO</label>
-  <input type='text' name='XXXXXXXXX'>
+  <label>Ship 1 Type:</label>
+  <input type='text' name='pirate[ships][][type]'>
   
+  <label>Ship 1 Booty:</label>
+  <input type='text' name='pirate[ships][][booty]'>
+  
+  <% # ship 2 %>
+  <label>Ship 1 Name:</label>
+  <input type='text' name='pirate[ships][][name]'>
+  
+  <label>Ship 1 Name:</label>
+  <input type='text' name='pirate[ships][][name]'>
+  
+  <label>Ship 1 Name:</label>
+  <input type='text' name='pirate[ships][][name]'>
+  
+  <input type="submit">
 </form>
