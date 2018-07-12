@@ -1,11 +1,17 @@
-# have a name, weight, and height. You will also need a class method that returns all
 
 class Pirate
   attr_accessor :name, :weight, :height
-  @@all = []
+  PIRATES = []
+  
+  def initialize(args)
+    self.name = args[:name]
+    self.weight = args[:weight]
+    self.height = args[:height]
+    self.class.all << self
+  end
   
   def self.all 
-    @@all
+    PIRATES
   end
   
 end
