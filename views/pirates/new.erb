@@ -1,6 +1,6 @@
 <h2>Create a Pirate and two Ships</h2>
 
-<form action='/show' method='post'>
+<form action='/pirates' method='post'>
   <% # pirate %>
   <label>Pirate Name:</label>
   <input type='text' name='pirate[name]'>
@@ -22,14 +22,14 @@
   <input type='text' name='pirate[ships][][booty]'>
   
   <% # ship 2 %>
-  <label>Ship 1 Name:</label>
+  <label>Ship 2 Name:</label>
   <input type='text' name='pirate[ships][][name]'>
   
-  <label>Ship 1 Name:</label>
-  <input type='text' name='pirate[ships][][name]'>
+  <label>Ship 2 Type:</label>
+  <input type='text' name='pirate[ships][][type]'>
   
-  <label>Ship 1 Name:</label>
-  <input type='text' name='pirate[ships][][name]'>
+  <label>Ship 2 Booty:</label>
+  <input type='text' name='pirate[ships][][booty]'>
   
   <input type="submit">
 </form>
