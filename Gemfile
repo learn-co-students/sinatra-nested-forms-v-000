@@ -2,13 +2,6 @@ source "https://rubygems.org"
 
 gem 'sinatra', require: 'sinatra/base'
 gem 'sinatra-reloader', require: false
-
-#need for persistance
-gem 'activerecord', :require => 'activerecord'
-gem 'sinatra-activerecord', :require => 'sinatra/activerecord'
-gem 'sqlite3'
-gem 'rake'
-
 gem 'shotgun'
 gem 'pry'
 gem 'tux'
@@ -19,3 +12,4 @@ group :test do
   gem 'rack-test'
   gem 'capybara'
 end
+
