@@ -8,22 +8,18 @@ module FormsLab
       erb :root
     end
 
-    get '/pirates' do
-      @pirates = Pirate.all
-      erb :'pirates/index'
-    end
-
     get '/new' do
       erb :'pirates/new'
     end
 
-    get '/pirates/:id' do
-      @pirate = Pirate.find(params[:id])
-      erb :'pirates/show'
-    end
-
     post '/pirates' do 
-      binding.pry
+      @pirate = Pirate.new(params[:pirate])
+      
+      params[:pirate][:ships].each do |details|
+        Ship.new(details)
+      end
+      
+      erb :'pirates/show'
     end
 
   end
