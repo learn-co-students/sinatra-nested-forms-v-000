@@ -8,18 +8,18 @@ module FormsLab
       erb :root
     end
 
-    get '/new' do
-      erb :'/pirates/new'
-    end
-
-    get '/show' do
-      erb :show
-    end
-
     get '/pirates' do
       @pirates = Pirate.all
-
       erb :'pirates/index'
+    end
+
+    get '/new' do
+      erb :'pirates/new'
+    end
+
+    get '/pirates/:id' do
+      @pirate = Pirate.find(params[:id])
+      erb :'pirates/show'
     end
 
   end
