@@ -6,10 +6,11 @@ class Ship
   
   @@all = []
   
-  def initialize(name, type, booty)
-    @name = name
-    @type = type
-    @booty = booty
+  def initialize(ship)
+    # binding.pry
+    @name = ship[:name]
+    @type = ship[:type]
+    @booty = ship[:booty]
     @@all << self
   end
     
