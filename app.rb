@@ -12,6 +12,7 @@ module FormsLab
     end
     
     post '/pirates' do
+<<<<<<< HEAD
       @pirate = Pirate.new(params[:pirate])
       #binding.pry
  
@@ -20,6 +21,8 @@ module FormsLab
       end
  
       @ships = Ship.all
+=======
+>>>>>>> 41705ad0d1e8c8770d062bc86a1fe6d77a523e24
       erb :'pirates/show'
     end
 
