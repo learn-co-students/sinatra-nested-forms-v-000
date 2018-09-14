@@ -1,1 +1,22 @@
-<h1>Make your form here</h1>
+<!DOCTYPE html>
+<html>
+
+<h1> Fill in your info </h1>
+  <form action="/pirates" method="post"> <!-- takes us to route /pirates which loads erb :show -->
+      <label for="pirate name">Pirate Name:</label> <input type="text" name="pirate[name]">
+      <label for="pirate weight">Pirate Weight:</label> <input type="text" name="pirate[weight]">
+      <label for="pirate height">Pirate Height:</label> <input type="text" name="pirate[height]">
+
+      <label for="ship_name_1">Ship Name 1:</label> <input type="text" id="ship_name_1" name="pirate[ships][][name]">
+      <label for="ship_type_1">Ship Type 1:</label> <input type="text" id="ship_type_1" name="pirate[ships][][type]">
+      <label for="ship_booty_1">Ship Booty 1:</label> <input type="text" id="ship_booty_1" name="pirate[ships][][booty]">
+
+      <label for="ship_name_2">Ship Name 2:</label> <input type="text" id="ship_name_2" name="pirate[ships][][name]">
+      <label for="ship_type_2">Ship Type 2:</label> <input type="text" id="ship_type_2" name="pirate[ships][][type]">
+      <label for="ship_booty_2">Ship Booty 2:</label> <input type="text" id="ship_booty_2" name="pirate[ships][][booty]">
+      <input type="submit" id="Submit">
+      <!--need ids for capybara, not sure why they wanted labels --> 
+  </form>
+
+
+</html>
