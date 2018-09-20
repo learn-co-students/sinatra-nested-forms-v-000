@@ -1,7 +1,13 @@
 
-<form>
-  Pirate Name:<input type="text" name="name">
-  Pirate Weight:<input type="text" name="weight">
-  Pirate Height:<input type="text" name="height">
+<form action="/pirates" method="post">
+  Pirate Name:<input type="text" name="pirate[name]">
+  Pirate Weight:<input type="text" name="pirate[weight]">
+  Pirate Height:<input type="text" name="pirate[height]">
+  First Ship Name:<input type="text" name="pirate[ships][][name]">
+  First Ship Type:<input type="text" name="pirate[ships][][type]">
+  First Ship Booty:<input type="text" name="pirate[ships][][booty]">
+  Second Ship Name:<input type="text" name="pirate[ships][][name]">
+  Second Ship Type:<input type="text" name="pirate[ships][][type]">
+  Second Ship Booty:<input type="text" name="pirate[ships][][booty]">
   <input type="submit">
 </form>
