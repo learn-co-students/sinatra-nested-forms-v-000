@@ -13,12 +13,14 @@ module FormsLab
     end
 
     post '/pirates' do
-      #@pirate = Pirate.new(params[:pirate])
+      @pirate = Pirate.new(params)
 
-      @ships = params["pirate"]["ships"].each do |ship|
-        s = Ship.new(ship)
+      @ships = params["pirate"]["ships"].map do |ship|
+        s = Ship.new(ship) #how do I instantiate these objects properyly?
       end
+    
 
+      erb :'pirates/show'
     end
 
   end
