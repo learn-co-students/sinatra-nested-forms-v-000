@@ -1,7 +1,25 @@
-<h1>Display your Pirate here</h1>
+<h1>
+  <form action="/pirates" method="post">
+  Pirate Name:<%=@pirate.name%>
+  Pirate Weight:<%=@pirate.weight%>
+  Pirate Height:<%=@pirate.height%>
+  </form>
+</h1>
 
 
-<h2>Display your first ship here</h2>
+<h2>
+  <form action="/pirates" method="post">
+    First Ship Name:<%=@ships[0].name%>
+    First Ship Type:<%=@ships[0].type%>
+    First Ship Booty:<%=@ships[0].booty%>
+  </form>
+</h2>
 
 
-<h2>Display your second ship here</h2>
+<h2>
+  <form action="/pirates" method="post">
+    Second Ship Name:<%=@ships[1].name%>
+    Second Ship Type:<%=@ships[1].type%>
+    Second Ship Booty:<%=@ships[1].booty%>
+  </form>
+</h2> -->
