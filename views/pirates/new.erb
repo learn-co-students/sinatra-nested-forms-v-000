@@ -1,1 +1,22 @@
 <h1>Make your form here</h1>
+
+1.	<form action="/student" method="post">
+2.	Student Name: <input type="text" name="student[name]">
+3.	Student Grade: <input type="text" name="student[grade]">
+4.	Course Name: <input type="text" name="student[courses][][name]">
+5.	Course Topic: <input type="text" name="student[courses][][topic]">
+6.	Course Name: <input type="text" name="student[courses][][name]">
+7.	Course Topic: <input type="text" name="student[courses][][topic]">
+8.	<input type="submit">
+9.	</form>
+
+<form method="post" action="/pirates">
+	  <label for="name"> Pirate Name</label>
+	  <input type="text" id="name" name="pirate[name]">
+	  <label for="weight"> Pirate Weight</label>
+	  <input type="text" id="weight" name="pirate[weight]">
+	  <label for="height"> Pirate Height</label>
+	  <input type="text" id="height" name="pirate[height]">
+
+	  <input type="submit" value="submit">
+	</form>
