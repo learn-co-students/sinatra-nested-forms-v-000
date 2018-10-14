@@ -15,13 +15,9 @@ module FormsLab
 
     post '/pirates' do
       #form stuffs
-
+      @pirate_name = params[:name]
 
       erb :'pirates/show'
-    end
-
-    get '/show' do
-        @name = params[:name]
     end
 
 
