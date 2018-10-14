@@ -13,5 +13,17 @@ module FormsLab
       erb :'pirates/new'
     end
 
+    post '/pirates' do
+      #form stuffs
+
+
+      erb :'pirates/show'
+    end
+
+    get '/show' do
+        @name = params[:name]
+    end
+
+
   end
 end
