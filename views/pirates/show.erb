@@ -5,10 +5,9 @@
 
 <h2>Display your first ship here</h2>
 <% @ship.each do |ships| %>
+<div class="ship">
 <p>Ship Name: <%= ships.name %></p>
 <p>Ship Type: <%= ships.type %></p>
 <p>Ship Booty: <%= ships.booty %></p>
+<div><br>
 <% end %>
-
-
-<h2>Display your second ship here</h2>
