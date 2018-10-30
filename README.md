@@ -24,7 +24,7 @@ fill_in("ship_type_1", :with => "ghost ship")
 fill_in("ship_booty_1", :with => "gold coins")
 ```
 
-The word in quotes after fill_in needs to be set as an ID in the form. This is because your ship name one and two will have the same `name` property. Capybara needs some sort of unique indentifier, so we use `id`. So something like this:
+The word in quotes after fill_in needs to be set as an ID in the form. This is because your ship name one and two will have the same `name` property. Capybara needs some sort of unique identifier, so we use `id`. So something like this:
 
 ```
 <input id="ship_name_1" type="text" name="pirate[ships][][name]" >
