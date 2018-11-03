@@ -1,1 +1,10 @@
 <h1>Make your form here</h1>
+<form method="POST" action=/new>
+  <label>Name:<input type="text" name="pirate[name]"/></label>
+  <label>Weight:<input type="text" name="pirate[weight]"/></label>
+  <label>Height:<input type="text" name="pirate[height]"/></label>
+  <label>Ship name:<input type="text" name="pirate[ships][][name]"/></label>
+  <label>Ship type:<input type="text" name="pirate[ships][][type]"/></label>
+  <label>Ship booty:<input type="text" name="pirate[ships][][booty]"/></label>
+  <input type="submit" name="Submit"/>
+</form>
