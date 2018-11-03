@@ -1,4 +1,4 @@
-require './environment'
+require './config/environment'
 
 module FormsLab
   class App < Sinatra::Base
@@ -12,14 +12,21 @@ module FormsLab
       erb :'pirates/new'
     end
 
+    get 'pirates/:id' do
+      @pirate = Pirate.find(params[:id])
+      @ships = @pirate.ships
+      erb :'pirates/show'
+    end
+
     post '/pirates' do
-      @pirate = Pirate.new(params[:pirate])
-      params[:pirate][:ships].each do |attributes|
-        ship = Ship.new(attributes)
+      @pirate = Pirate.create({name: params[:pirate][:name], height: params[:pirate][:height], weight: params[:pirate][:weight]})
+
+      @ships = params[:pirate][:ships].collect do |attributes|
+        ship = Ship.create(attributes)
+        ship.pirate = @pirate
+        ship
       end
-
-      @ships = Ship.all
-
+      
       erb :'pirates/show'
     end
 
