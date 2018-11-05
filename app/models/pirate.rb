@@ -1,6 +1,6 @@
 class Pirate
 
-  attr_reader :name, :weight, :Height
+  attr_reader :name, :weight, :height
 
   PIRATES = []
 
