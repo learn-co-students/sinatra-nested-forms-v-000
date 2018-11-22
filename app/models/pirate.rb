@@ -13,4 +13,6 @@ class Pirate
   def self.all
     PIRATES
   end
+  
+  @pirates = PIRATES
 end
