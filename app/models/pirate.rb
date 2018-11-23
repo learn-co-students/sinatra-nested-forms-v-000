@@ -1,5 +1,5 @@
-class Pirate
-  attr_reader :name, :weight, :height
+class Pirate < ActiveRecord::Base
+  attr_reader :name, :weight, :height, :ships
 
   PIRATES = []
 
