@@ -1,7 +1,7 @@
 class Ship
-  attr_accessor :name, :type, :booty
+  attr_accessor :name, :type, :booty, :pirate
 
-  all_ships = []
+  @@all_ships = []
 
   def self.all
     all_ships
@@ -12,6 +12,6 @@ class Ship
   end
 
   def initialize
-    all_ships << self
+    @@all_ships << self
   end
 end
