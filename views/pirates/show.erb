@@ -1,9 +1,15 @@
-<h1> <%=@pirate.name%> </h1>
-<h1> <%=@pirate.weight%> </h1>
-<h1> <%=@pirate.height%> </h1>
-<h1> <%=@pirate.name + "'s" + "Ships"%> </h1>
-<h1> <%@pirate.ships.each do |pirate_ship| %> </h1>
-<h1> <%=pirate_ship.name %> </h1>
-<h1> <%=pirate_ship.type %> </h1>
-<h1> <%=pirate_ship.booty %> </h1>
-<h1> <%end%> </h1>
+<h1> ARRRR, HERE BE YOUR PIRATE AND HIS SHIPS </h1>
+<ul>
+<li> <%=@pirate.name%> </li>
+<li> <%=@pirate.weight%> </li>
+<li> <%=@pirate.height%> </li>
+</ul>
+
+<h1> <%=@pirate.name + "'s " + "ships:"%> </h1>
+<ul>
+<p><%@pirate.ships.each do |pirate_ship| %> </p>
+<h2> <%=pirate_ship.name %> </h2>
+<li> <%=pirate_ship.type %> </li>
+<li> <%=pirate_ship.booty %> </li>
+<p> <%end%> </p>
+</ul>
