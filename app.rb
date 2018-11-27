@@ -21,7 +21,8 @@ module FormsLab
         ship.type = ship_data[:type]
         ship.booty = ship_data[:booty]
         @pirate.ships << ship
-        binding.pry
+        # binding.pry
+        # binding.pry
       end
       erb :'pirates/show'
     end
