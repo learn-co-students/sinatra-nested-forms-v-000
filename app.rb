@@ -12,13 +12,10 @@ module FormsLab
     end
 
     post '/pirates' do
-      @pirate_name = pirate[name]
-      @pirate_weight = pirate[weight]
-      @pirate_height = pirate[height]
-      erb :'pirates/show'
+      @pirate = params[:pirate]
+      binding.pry
+       erb :'/pirates/show'
     end
 
-
-
-end
+  end
 end
