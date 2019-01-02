@@ -1,13 +1,13 @@
 class Ship
   
-    attr_reader :name, :type, :booty_attributes
+    attr_accessor :name, :type, :booty
   
   @@all = []
   
-  def initalize(args)
+  def initialize(args)
     @name = args[:name]
     @type = args[:type]
-    @booty_attributes = args[:booty_attributes]
+    @booty = args[:booty]
     @@all << self 
   end
   
