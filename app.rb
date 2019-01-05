@@ -1,5 +1,5 @@
 require './environment'
-
+require "pry"
 module FormsLab
   class App < Sinatra::Base
 
@@ -14,9 +14,9 @@ module FormsLab
   end
   
   post "/pirates" do 
-    @pirate = Pirate.new(params[:name],params[:weight],params[:height])
-    @first_ship = Ship.new(params[:name],params[:type],params[:booty])
-    @second_ship = Ship.new(params[:name],params[:type],params[:booty])
+    @pirate = Pirate.new(params[:pirate][:name],params[:pirate][:weight],params[:pirate][:height])
+    @first_ship = Ship.new(params[:pirate][:ships][0])
+    @second_ship = Ship.new(params[:pirate][:ships][1])
     erb :'pirates/show'
   end
   
