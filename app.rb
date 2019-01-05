@@ -13,6 +13,10 @@ module FormsLab
     #erb :index
   end
   
+  post "/pirates" do 
+    #erb :index
+  end
+  
 
   end
 end
