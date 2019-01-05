@@ -6,15 +6,15 @@ module FormsLab
     # code other routes/actions here
   
   get "/" do 
-    #erb :index
+    erb :index
   end
   
   get "/new" do 
-    #erb :index
+    #erb :
   end
   
   post "/pirates" do 
-    #erb :index
+    #erb :
   end
   
 
