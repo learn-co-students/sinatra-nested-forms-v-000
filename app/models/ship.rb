@@ -1,21 +1,21 @@
 class Ship
   attr_accessor :name, :type, :booty
 
-  SHIPS = []
+  @@ships = []
 
-  def initialize(name, type, booty)
-    @name = name
-    @type = type
-    @booty = booty
-    SHIPS << self
+  def initialize(ship)
+    @name = ship[:name]
+    @type = ship[:type]
+    @booty = ship[:booty]
+    @@ships << self
   end
 
   def self.all
-    SHIPS
+    @@ships
   end
 
   def self.clear
-    SHIPS.drop(SHIPS.count)
+    @@ships.clear
   end
 
 end
