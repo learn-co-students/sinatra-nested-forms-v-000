@@ -5,7 +5,8 @@ module FormsLab
 
     # code other routes/actions here
 
-    get '/pirates' do
+    post '/pirates' do    # this should be a post route; when a form is submitted, it shoud go to a post route
+      @pirates = Pirate.create(pirate["pirate"])
       erb :'pirates/show'
     end
 
@@ -14,7 +15,7 @@ module FormsLab
     end
 
     #
-    get '/pirates/new' do
+    get '/new' do # this should be get '/new' do,
       erb :'pirates/new'
     end
     #
