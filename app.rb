@@ -1,12 +1,15 @@
 require './environment'
-
+require 'pry'
 module FormsLab
   class App < Sinatra::Base
 
     # code other routes/actions here
 
     post '/pirates' do    # this should be a post route; when a form is submitted, it shoud go to a post route
-      @pirates = Pirate.create(pirate["pirate"])
+      #binding.pry
+      @pirates = Pirate.new(params["pirate"]["name"],params["pirate"]["weight"], params["pirate"]["height"])
+      @ship1 = Ship.new(params["pirate"]["ships"][0]["name"], params["pirate"]["ships"][0]["type"], params["pirate"]["ships"][0]["booty"])
+      @ship2 = Ship.new(params["pirate"]["ships"][1]["name"], params["pirate"]["ships"][1]["type"], params["pirate"]["ships"][1]["booty"])
       erb :'pirates/show'
     end
 
