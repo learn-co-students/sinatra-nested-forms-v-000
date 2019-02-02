@@ -1,7 +1,16 @@
-<h1>Display your Pirate here</h1>
+<h1>Pirate</h1> <!-- "Changed Display your Pirate here" to Pirate -->
 
+<div class="pirate">
+  <h3>name: <%= @pirate.name %></h3><br>
+  <h4>weight: <%= @pirate.weight %></h4>
+  <h5>height: <%= @pirate.height %></h5>
+</div><br>
 
-<h2>Display your first ship here</h2>
-
-
-<h2>Display your second ship here</h2>
+<h1>Ships</h1> <!-- Changed ship 1 and ship 2 to Ships to iterate easiers. -->
+  <% @ships.each do |ship| %>
+    <div class="ships">
+      <p>Name: <%= ship.name%></p><br>
+      <p>Type: <%= ship.type %></p><br>
+      <p>Booty: <%= ship.booty %></p><br> <!-- these need = -->
+    </div><br>
+    <% end %> <!-- this doesn't --> 
