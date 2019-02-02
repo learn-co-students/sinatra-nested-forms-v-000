@@ -1,1 +1,13 @@
 <h1>Make your form here</h1>
+<form class="" action="/pirates" method="post"> <!-- action has to be the correct route -->
+  Pirate Name: <input type="text" name="pirate[name]">
+  Pirate Weight: <input type="text" name="pirate[weight]">
+  Pirate Height: <input type="text" name="pirate[height]">
+  ship_name_1: <input type="text" id="ship_name_1" name="pirate[ships][][name]">
+  ship_type_1: <input type="text" id="ship_type_1" name="pirate[ships][][type]"> <!-- ids are for 2 requested ships in spec otherwise use each with index -->
+  ship_booty_1: <input type="text" id="ship_booty_1" name="pirate[ships][][booty]">
+  ship_name_2: <input type="text" id="ship_name_2" name="pirate[ships][][name]">
+  ship_type_2: <input type="text" id="ship_type_2" name="pirate[ships][][type]"><!-- we make ships a related class to pirates -->
+  ship_booty_2: <input type="text" id="ship_booty_2" name="pirate[ships][][booty]"> <!-- A pirate can have multiple ships -->
+  <input type="submit" name="Submit" value="Submit"> <!-- TYPE AND NAME ARE DIFFERENT CASES UPPER AND LOWER. Type is always lowercase. -->
+</form>
