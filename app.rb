@@ -5,12 +5,38 @@ module FormsLab
 
     # code other routes/actions here
 
-    post '/pirates' do    # this should be a post route; when a form is submitted, it shoud go to a post route
+    get '/pirates' do
+      @pirates = Pirate.all
+
+      erb :'pirates/index'
+    end
+
+    get '/pirates/new' do
+      erb :'pirates/new'
+    end
+
+    get '/pirates/:id' do #dinamic assignments #dynamic segment
       #binding.pry
-      @pirates = Pirate.new(params["pirate"]["name"],params["pirate"]["weight"], params["pirate"]["height"])
-      @ship1 = Ship.new(params["pirate"]["ships"][0]["name"], params["pirate"]["ships"][0]["type"], params["pirate"]["ships"][0]["booty"])
-      @ship2 = Ship.new(params["pirate"]["ships"][1]["name"], params["pirate"]["ships"][1]["type"], params["pirate"]["ships"][1]["booty"])
+      @pirate = Pirate.find(params["id"])
+
       erb :'pirates/show'
+    end
+
+
+
+
+    post '/pirates' do    # this should be a post route; when a form is submitted, it shoud go to a post route
+    #  binding.pry
+      pirate = Pirate.create(name: params[:pirate][:name], weight: params[:pirate][:weight], height: params[:pirate][:height])
+      params[:pirate][:ships].each do |ship_data|
+        ship = Ship.new(ship_data)
+        ship.pirate = pirate
+        ship.save
+      end
+
+      redirect to "/pirates/#{pirate.id}"
+      # please go to localhost:9393/pirates/this pirate's id
+
     end
 
     get '/' do
