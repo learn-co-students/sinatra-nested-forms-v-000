@@ -4,11 +4,15 @@
 		<title></title>
 	</head>
 	<body>
-		<h1>"Welcome to the Nested Forms Lab!"</h1>
-		<form action="/show" method="post">
+		<h1>Create a Pirate!</h1>
+		<form action="/pirates" method="post">
 			Pirate Name: <input type="text" name="pirate[name]">
 			Pirate Height: <input type="text" name="pirate[height]">
 			Pirate Weight: <input type="text" name="pirate[weight]">
+			Ship Name: <input type="text" name="pirate[ships][][name]">
+			Ship Type: <input type="text" name="pirate[ships][][type]">
+			Ship Booty: <input type="text" name="pirate[ships][][booty]">
+			<input type="submit" value="submit">
 		</form>
 	</body>
 </html>
