@@ -1,1 +1,52 @@
 <h1>Make your form here</h1>
+<form action="/pirates" method="post" class="pirate-and-ships-form">
+
+  <!--pirate-->
+  <div class="pirate-and-ships-form">
+    <label>Enter the pirates name: </label>
+    <input type="text" name="pirate[name]">
+  </div>
+  <div class="pirate-and-ships-form">
+    <label>Enter the weight of the pirete: </label>
+    <input type="text" name="pirate[weight]">
+  </div>
+  <div class="pirate-and-ships-form">
+    <label>Enter the height of the pirete:  </label>
+    <input type="text" name="pirate[height]">
+  </div>
+   <br>
+
+  <!--ship-->
+  <div class="pirate-and-ships-form">
+    <label for= "ship_name ">Enter the ships name: </label>
+    <input type="text" name="pirate[ships][][name]" id="ship_name_1">
+  </div>
+  <div class="pirate-and-ships-form">
+    <label for= "ship_category ">Enter the category of ship: </label>
+    <input type="text" name="pirate[ships][][category]" id="ship_category_1">
+  </div>
+  <div class="pirate-and-ships-form">
+    <label for= "ship_booty ">Enter the amount of booty on ship:  </label>
+    <input type="text" name="pirate[ships][][booty]" id="ship_booty_1">
+  </div>
+  <br>
+
+  <!--ship-->
+  <div class="pirate-and-ships-form">
+    <label for= "ship_name ">Enter the ships name: </label>
+    <input type="text" name="pirate[ships][][name]" id="ship_name_2">
+  </div>
+  <div class="pirate-and-ships-form">
+    <label for= "ship_category ">Enter the category of ship: </label>
+    <input type="text" name="pirate[ships][][category]" id="ship_category_2">
+  </div>
+  <div class="pirate-and-ships-form">
+    <label for= "ship_booty ">Enter the amount of booty on ship:  </label>
+    <input type="text" name="pirate[ships][][booty]" id="ship_booty_2">
+  </div>
+  <br>
+
+  <div class="pirate-and-ships-form">
+    <input type="submit" value="Submit">
+  </div>
+</form>

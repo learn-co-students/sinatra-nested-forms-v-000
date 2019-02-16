@@ -1,0 +1,64 @@
+>Pirate class
+name
+weight
+height
+
+@@all
+
+
+--------------------------
+>Ship class
+name
+type
+booty
+
+.all
+.clear
+
+----------------------
+>nested form
+<label>
+
+object 1 - Pirate class
+object 2 - Ship class
+object 3 - Ship class
+
+you'll need to build
+a corresponding controller
+action to load this page.
+
+Your form should POST to the route '/pirates'.
+-----------------------
+======
+submit ->
+-----------------------
+======
+show.erb
+
+- shows the pirate you created
+- their ships
+- all the details about the pirate
+- their ships
+
+=========
+
+- Pirate
+name
+weight
+height
+
+---
+
+- Ship class
+name
+type
+booty
+
+---
+
+- Ship class
+name
+type
+booty
+
+========
