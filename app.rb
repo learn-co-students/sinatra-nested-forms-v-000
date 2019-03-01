@@ -14,15 +14,12 @@ module FormsLab
     end
     
     post '/pirates' do
-      @pirate= params[:pirate]
-      @ship1= params[:ships][0]
-      @ship2= params[:ships][1]
+      
       erb :'pirates/show'
     end
 
   end
 end
-
 
 # {"pirate"=>
 #   {"name"=>"Ian",
