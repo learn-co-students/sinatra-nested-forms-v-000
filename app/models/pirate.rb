@@ -1,4 +1,4 @@
-class Pirate
+class Pirate < ActiveRecord::Base
     attr_accessor :name, :weight, :height
     @@pirates = []
 
