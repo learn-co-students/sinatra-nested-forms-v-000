@@ -3,13 +3,21 @@
 <p><%= @pirate.weight %></p>
 <p><%= @pirate.height %></p>
 
-<h2>Display your first ship here</h2>
+<ul>
+<% @pirate.ships.each.with_index(1) do |ship, index| %>
+    <h4>Ship<%= index %> </h4>
+    <li><%= ship.name %> </li>
+    <li><%= ship.category %> </li>
+    <li><%= ship.booty %> </li>
+<% end %>
+</ul>
+<%#<h2>Display your first ship here</h2>
 <%#<p><%= @ships[0].name %></p>
-<%#<p><%= @ships[0].type %></p>
+<%#<p><%= @ships[0].category %></p>
 <%#<p><%= @ships[0].booty %></p>
 
 
-<h2>Display your second ship here</h2>
+<%#<h2>Display your second ship here</h2>
 <%#<p><%= @ships[1].name %></p>
-<%#<p><%= @ships[1].type %></p>
-<%#<p><%= @ships[1].booty</p> %>
+<%#<p><%= @ships[1].category %></p>
+<%#<p><%= @ships[1].booty %></p>

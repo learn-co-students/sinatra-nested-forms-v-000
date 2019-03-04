@@ -14,6 +14,7 @@ module FormsLab
 
     get '/pirates/:id' do 
       @pirate = Pirate.find(params[:id])
+      @ships = @pirate.ships
       erb :'pirates/show'
     end
 
