@@ -8,6 +8,11 @@ module FormsLab
       erb :'pirates/index'
     end
 
+    get '/pirates/:id' do 
+      @pirate = Pirate.find(params[:id])
+      erb :'pirates/show'
+    end
+
     # code other routes/actions here
     # get '/' do
     #   erb :root
