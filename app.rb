@@ -4,16 +4,15 @@ module FormsLab
   class App < Sinatra::Base
 
     # code other routes/actions here
-    get '/' do
+    get '/pirates/:id' do
+      @pirates = Pirate.find(params[:id])
+      erb :'pirates'
+    end
 
 
-  end
-
-
-  post '/post' do
-
-    
-  end
+    post '/pirates/new' do
+      erb :'pirates/new'
+    end
 
 
 
