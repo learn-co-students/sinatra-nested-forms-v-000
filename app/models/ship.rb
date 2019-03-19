@@ -14,9 +14,9 @@ class Ship
     SHIPS
   end
 
-  def cleared_ships
+  def self.clear
       cleared_ships = []
-      self.clear = []
+      @@ships = []
   end
 
 end

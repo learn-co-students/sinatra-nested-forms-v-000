@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html>
 <head>
   <meta charset="UTF-8">
@@ -8,23 +8,60 @@
 </head>
 
 <body>
-    <p>
+    <p> -->
 
-<form method="post" action= "/new">
-  <label for="name">Pirate Name</label>
-    <input type="text" id="name" name="name">
+<form method="POST" action= '/pirates'  >
+  <h2> Pirates </h2>
 
-  <label for="weight">Pirate's Weight</label>
-    <input type="integer" id="weight" name="weight"
+  <label for="pirate_name">Pirate Name</label><br>
+    <type="text" input id="pirate_name" name="pirate[name]"/><br>
 
-  <label for="height">Pirate's Height</label>
-    <input type="integer" id="height" name="height"
+  <label for="pirate_weight">Pirate Weight</label><br>
+    <type="text" input id="pirate_weight" name="pirate[weight]"/><br>
 
-    <input type="submit" value="submit">
-    <input type="button" value="submit">
+  <label for="pirate_height">Pirate's Height</label><br>
+    <type="text" input id="pirate_height" name="pirate[height]"/><br>
 
-    </p>
+    <type="submit" value="submit">
 
-  </form>
 
-</body>
+
+
+    <h2>Ship #1</h2>
+
+      <label for="ship_1_name">Ship Name</label><br>
+        <type="text" input id="ship_name_1" name="pirates[ships][][name]"/><br>
+
+
+      <label for="ship_1_type">Ship Type</label><br>
+        <type="text" input id="ship_type_1" name="pirates[ships][][type]"/><br>
+
+
+      <label for="ship_1_booty">Ship Booty</label><br>
+        <type="text" input id="ship_booty_1" name="pirates[ships][][booty]"/><br>
+
+
+
+    <h2>Ship #2</h2>
+
+      <label for="ship_2_name">Ship Name</label><br>
+        <type="text" input id="ship_2_name" name="pirate[ships][][name]"/><br>
+
+
+      <label for="ship_2_type">Ship Type</label><br>
+        <type="text" input id="ship_2_weight" name="pirate[ships][][type]"/><br>
+
+
+      <label for="ship_2_booty">Ship Booty</label><br>
+        <type="text" input id="ship_2_booty" name="pirate[ships][][booty]"/><br>
+
+
+          <input type="submit" value="Submit">
+
+        </p>
+
+      </form>
+
+  </body>
+
+</html>
