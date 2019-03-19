@@ -9,8 +9,7 @@ module FormsLab
     end
 
 
-
-    get 'pirates/new' do
+    get '/new' do
       erb :'pirates/new'
     end
 
@@ -19,7 +18,6 @@ module FormsLab
       @pirates = Pirate.find(params[:id])
       erb :'pirates'
     end
-
 
 
     post '/pirates' do
