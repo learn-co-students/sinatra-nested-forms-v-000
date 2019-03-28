@@ -1,10 +1,10 @@
 class Ship
   @@ships= []
-  attr_accessor :name,:type,:botty
+  attr_accessor :name,:type,:booty
   def initialize(args) #hash
      @name= args[:name]
      @type= args[:type]
-     @botty= args[:type]
+     @booty= args[:type]
      @@ships << self
    end
    def self.all
