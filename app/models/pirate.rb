@@ -2,20 +2,20 @@ require 'pry'
 class Pirate
   attr_reader :name, :weight, :height
 
-  @@all_pirates = []
+  PIRATES = []
 
   def initialize(params)
     @name = params[:name]
     @weight = params[:weight]
     @height = params[:height]
-    @@all_pirates << self
+    PIRATES << self
   end
 
   def self.all
-    @@all_pirates
+    PIRATES
   end
 
   def self.clear
-    @@all_pirates.clear
+    PIRATES.clear
   end
 end

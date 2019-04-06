@@ -9,14 +9,14 @@ module FormsLab
     end
     
     get '/new' do
-      "Hello World"
-      #erb :pirates
+     erb :new
     end
     
     post '/pirates' do 
-      @new_pirate = Pirate.new(params)
+      "Hello"
+      #@new_pirate = Pirate.new(params)
       #binding.pry
-      erb :show
+      #erb :show
     end
   end
 end
