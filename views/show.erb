@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  </head>
+  <body>
+    <h1>Your Pirate</h1>
+    <div class="pirate">
+      <h3>Name: <%= @pirate.name %></h3>
+      <h4>Weight: <%= @pirate.weight %> lbs</h4>
+      <h4>Height: <%= @pirate.height %></h4>
+    </div>
+    <br>
+    <div class="ship_1">
+    <h2>Your First Ship</h2>
+    <h3>Name: <%= @ships[0].name %></h3>
+    <h4>Type: <%= @ships[0].type %></h4>
+    <h4>Booty: <%= @ships[0].booty %></h4>
+    </div>
+    <br>
+    <div class="ship_2">
+    <h2>Your Second Ship</h2>
+    <h3>Name: <%= @ships[1].name %></h3>
+    <h4>Type: <%= @ships[1].type %></h4>
+    <h4>Booty: <%= @ships[1].booty %></h4>
+    </div>
+  </body>
+
+</html>

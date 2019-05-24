@@ -1,7 +1,7 @@
 context "Filling in the Form" do
   before do
     visit "/new"
-  end
+  end 
 
   it "can fill in forms for a pirate and two ships" do
     fill_in("pirate[name]", :with => "Captain Jack Sparrow")
