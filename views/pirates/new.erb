@@ -1,1 +1,46 @@
-<h1>Make your form here</h1>
+
+<h1>Pirate Form</h1>
+
+
+<form action="/pirates" method="post">
+
+  <p>
+    <label for="pirate[name]">Pirate Name: </label>
+    <input type="text" name="pirate[name]" id="pirate[name]">
+  </p>
+  
+  <p>
+    <label for="pirate[height]">Pirate Height: </label>
+    <input type="text" name="pirate[height]" id="pirate[height]">
+  </p>
+  
+  <p>
+    <label for="pirate[weight]">Pirate Weight: </label>
+    <input type="text" name="pirate[weight]" id="pirate[weight]">
+  </p>
+  
+  <% 5.times do |i| %>
+    <fieldset>
+      <legend>Ship <%= i+1%></legend>
+      <p>
+        <label for="pirate[ships][][name]">Ship Name: </label>
+        <input type="text" name="pirate[ships][][name]" id="ship_name_<%=i+1%>"> 
+      </p>
+      
+      <p>
+        <label for="pirate[ships][][type]">Ship Type: </label>
+        <input type="text" name="pirate[ships][][type]" id="ship_type_<%=i+1%>">
+      </p>
+      
+      <p>
+        <label for="pirate[ships][][booty]">Ship Booty: </label> 
+        <input type="text" name="pirate[ships][][booty]" id="ship_booty_<%=i+1%>">
+      </p>
+    </fieldset>
+  <% end %>
+
+  <input type="submit" id="submit" value="Submit">
+
+</form>
+
+
