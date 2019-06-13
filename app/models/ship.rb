@@ -6,10 +6,10 @@ class Ship
   
   def initialize(params)
     @name = params[:name]
-    @weight = params[:type]
-    @height = params[:booty]
+    @type = params[:type]
+    @booty = params[:booty]
     
-    SHIPS  << self
+    SHIPS << self
   end
   
   def self.all
@@ -17,7 +17,7 @@ class Ship
   end
   
   def self.clear
-    SHIPS.destroy_all
+    SHIPS.clear
   end
   
 end
