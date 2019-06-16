@@ -1,1 +1,35 @@
-<h1>Make your form here</h1>
+<h2>Create a Pirate and two Ships</h2>
+
+<form action='/pirates' method='post'>
+  <% # pirate %>
+  <label>Pirate Name:</label>
+  <input type='text' name='pirate[name]'>
+  
+  <label>Pirate Weight:</label>
+  <input type='text' name='pirate[weight]'>
+  
+  <label>Pirate Height:</label>
+  <input type='text' name='pirate[height]'>
+  
+  <% # ship 1 %> 
+  <label>Ship 1 Name:</label>
+  <input id='ship_name_1' type='text' name='pirate[ships][][name]'>
+  
+  <label>Ship 1 Type:</label>
+  <input id='ship_type_1' type='text' name='pirate[ships][][type]'>
+  
+  <label>Ship 1 Booty:</label>
+  <input id='ship_booty_1' type='text' name='pirate[ships][][booty]'>
+  
+  <% # ship 2 %>
+  <label>Ship 2 Name:</label>
+  <input id='ship_name_2' type='text' name='pirate[ships][][name]'>
+  
+  <label>Ship 2 Type:</label>
+  <input id='ship_type_2' type='text' name='pirate[ships][][type]'>
+  
+  <label>Ship 2 Booty:</label>
+  <input id='ship_booty_2' type='text' name='pirate[ships][][booty]'>
+  
+  <input id='Submit' type="submit">
+</form>
