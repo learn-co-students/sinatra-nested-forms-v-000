@@ -1,5 +1,48 @@
-<!-- <h1>Make your form here</h1> -->
+<h1>Arrg! Make yer pirate and his ships here, matey!</h1>
 
 <form method="POST" action="/pirates">
+  <h3>Let's make yer pirate first!</h3>
   
+  <p>
+    <label for="pirate[name]">Yer Pirate's Name:</label>
+    <input id="pirate[name]" name="pirate[name]" />
+  </p>
+  <p>
+    <label for="pirate[weight]">Yer Pirate's Weight (Not that it be any of yer business, mind yeh!):</label>
+    <input id="pirate[weight]" name="pirate[weight]" />
+  </p>
+  <p>
+    <label for="pirate[height]">Yer Pirate's Height:</label>
+    <input id="pirate[height]" name="pirate[height]" />
+  </p>
+  
+  <h3>Wha's a pirate wifout a ship? A landlubber, tha's what!</h3>
+  
+  <p>
+    <label for="ship_name_1">What's yer first ship's name?</label>
+    <input id="ship_name_1" name="pirate[ships][][name]" />
+  </p>
+  <p>
+    <label for="ship_type_1">What type of pirate ship is she?</label>
+    <input id="ship_type_1" name="pirate[ships][][type]" />
+  </p>
+  <p>
+    <label for="ship_booty_1">What booty has yer ship got on board? (Don' worry; I won' tell no'un.)</label>
+    <input id="ship_booty_1" name="pirate[ships][][booty]" />
+  </p>
+  
+  <h3>Yeh got ANOTHER ship, aye? Shiver me timbers, yeh lucky seadog!</h3>
+  
+  <p>
+    <label for="ship_name_2">What's yer second ship's name?</label>
+    <input id="ship_name_2" name="pirate[ships][][name]" />
+  </p>
+  <p>
+    <label for="ship_type_2">What type of pirate ship is she?</label>
+    <input id="ship_type_2" name="pirate[ships][][type]" />
+  </p>
+  <p>
+    <label for="ship_booty_2">What booty has yer ship got on board? (Don' worry; I won' tell a soul about this'un either...maybe.)</label>
+    <input id="ship_booty_2" name="pirate[ships][][booty]" />
+  </p>
 </form>
