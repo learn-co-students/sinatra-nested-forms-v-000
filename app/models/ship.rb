@@ -32,6 +32,6 @@ end
 #   end 
 #   
 #   def self.clear
-#     self.all.clear
+#     self.all.clear # That works!
 #   end
 # end
