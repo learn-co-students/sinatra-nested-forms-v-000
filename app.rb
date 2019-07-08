@@ -16,6 +16,18 @@ module FormsLab
     post '/pirates' do
       # puts params 
       
+      #params = {
+      #  "pirate" => {
+      #    "name" => "Captain Hook",
+      #    "weight" => "150 lbs",
+      #    "height" => "5ft, ll in",
+      #    "ships" => [
+      #      {"name" => "Jolly Roger", "type" => "Neverland ship", "booty" => "Lost Boys"},
+      #      {"name" => "Flying Dutchman", "type" => "ghost ship", "booty" => "cursed gold"}
+      #    ]
+      #  }
+      #}
+      
       @pirate = Pirate.new(params[:pirate])
       
       params[:pirate][:ships].each do |ship_attributes|
