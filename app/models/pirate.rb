@@ -1,5 +1,5 @@
-class Pirate < ActiveRecord::Base
-  attr_reader :name, :weight, :height, :ships
+class Pirate
+  attr_reader :name, :weight, :height
 
   PIRATES = []
 
@@ -13,6 +13,4 @@ class Pirate < ActiveRecord::Base
   def self.all
     PIRATES
   end
-  
-  @pirates = PIRATES
 end
