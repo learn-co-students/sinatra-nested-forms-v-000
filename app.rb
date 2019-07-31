@@ -10,7 +10,15 @@ module FormsLab
     end
 
     get '/new' do
-      erb :new
+      erb :'pirates/new'
+    end
+
+    post '/pirates' do
+      @params = params
+
+      #@params["pi"]
+      #binding.pry
+      erb :'pirates/show'
     end
 
   end
