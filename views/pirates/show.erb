@@ -1,7 +1,13 @@
-<h1>Display your Pirate here</h1>
+<h1>pirate name:<%= @params["pirate"]["name"] %></h1>
+<h1>pirate weight:<%= @params["pirate"]["weight"] %></h1>
+<h1>pirate height:<%= @params["pirate"]["height"] %></h1>
 
 
-<h2>Display your first ship here</h2>
+<h2>Ship name:<%= @params["pirate"]["ships"][0] %></h2>
+<h2>Ship type:<%= @params["pirate"]["ships"][0] %></h2>
+<h2>Ship booty:<%= @params["pirate"]["ships"][0] %></h2>
 
 
-<h2>Display your second ship here</h2>
+<h2>Ship name:<%= @params["pirate"]["ships"][1] %></h2>
+<h2>Ship type:<%= @params["pirate"]["ships"][1] %></h2>
+<h2>Ship booty:<%= @params["pirate"]["ships"][1] %></h2>
