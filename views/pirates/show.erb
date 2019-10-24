@@ -6,18 +6,11 @@
 </div><br>
 
 
-<h2>Display your first ship here</h2>
-
-  
-  <h3>Ship 1 Name: <%= @ships[0].name %></h3>
-  <h4>Ship 1 Type: <%= @ships[0].type %></h4>
-  <h4>Ship 1 Booty: <%= @ships[0].booty %></h4>
-  <br>
-
-
-
-<h2>Display your second ship here</h2>
-  <h3>Ship 2 Name: <%= @ships[1].name %></h3>
-  <h4>Ship 2 Type: <%= @ships[1].type %></h4>
-  <h4>Ship 2 Booty: <%= @ships[1].booty %></h4>
-  <br>
+<h1>Ships</h1>
+<% @ships.each do |ship| %>
+  <div class="ship">
+    <p>Name: <%= ship.name %></p><br>
+    <p>Type: <%= ship.type %></p><br>
+    <p>Booty: <%= ship.booty %></p>
+  </div><br>
+<% end %>
