@@ -1,7 +1,27 @@
-<h1>Display your Pirate here</h1>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <form class="" action="" method="post">
+      <h1>Display your Pirate here</h1>
+      <h1>Pirate Names </h1>
+        <h3> Pirate Name: <%=@pirate.name%> </h3>
+        <h3> Priate Weight: <%=@pirate.weight%> </h3>
+        <h3> Pritate Height: <%=@pirate.height%> </h3>
 
+      <h2>Display your first ship here</h2>
 
-<h2>Display your first ship here</h2>
+      <h2>Ship Names</h2>
 
-
-<h2>Display your second ship here</h2>
+        <% @ships.each do |ships| %>
+        <h3>Ship Name: <%= ships.name %></h3>
+        <p>Ship Type: <%= ships.type %><br>
+        Ship Booty: <%= ships.booty %></p>
+        <%end%>
+      <h2>Display your second ship here</h2>
+    </form>
+  </body>
+</html>
