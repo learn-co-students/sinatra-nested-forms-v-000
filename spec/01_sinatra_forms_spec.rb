@@ -73,7 +73,7 @@ describe "FormsLab::App" do
       Ship.clear
     end
 
- 
+   
 
     it "displays the pirate information upon form submission" do
       expect(last_response.body).to include("Ian")
