@@ -6,11 +6,15 @@
 
 <h1>Ships</h1>
 
-<% @ships.each do |ship| %> 
-  <%= ship.name %>
-  <%= ship.type %>
-  <%= ship.booty %>
+
+  <% @ships.each do |ship| %> 
+  <ul>
+  <li>Ship Name: <%= ship.name %></li>
+  <li>Ship Type: <%= ship.type %></li>
+  <li>Ship Booty: <%= ship.booty %></li>
+  </ul>
 <% end %>
+
 
 
 
