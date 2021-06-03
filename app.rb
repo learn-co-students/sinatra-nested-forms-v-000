@@ -14,7 +14,7 @@ module FormsLab
     end
 
     post '/pirates' do
-      binding.pry
+      # binding.pry
       name = params[:name]
       weight = params[:weight]
       height = params[:height]
